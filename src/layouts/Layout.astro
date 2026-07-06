@@ -1,0 +1,104 @@
+---
+import '@fontsource/playfair-display/400.css';
+import '@fontsource/playfair-display/500.css';
+import '@fontsource/playfair-display/600.css';
+import '@fontsource/playfair-display/700.css';
+import '@fontsource/playfair-display/800.css';
+import '@fontsource/playfair-display/900.css';
+
+import '@fontsource/lora/400.css'
+import '@fontsource/lora/500.css'
+import '@fontsource/lora/600.css'
+import '@fontsource/lora/700.css'
+
+import "@styles/global.css"
+
+import Header from "@/components/Header.astro"
+import Footer from "@/components/Footer.astro"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta
+			charset="UTF-8"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width"
+		/>
+		<meta
+			name="generator"
+			content={Astro.generator}
+		/>
+
+		<script is:inline>
+			const theme = localStorage.getItem('theme')
+			if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				document.documentElement.classList.add('dark')
+			}
+		</script>
+		<meta
+			name="description"
+			content="Bienvenido a nuestra florería en Lima, donde convertimos cada ocasión especial en un momento inolvidable. Nos especializamos en la creación de arreglos florales personalizados para cumpleaños, aniversarios, bodas, graduaciones, nacimientos, condolencias y todo tipo de celebraciones. Trabajamos con flores frescas de alta calidad y diseños elaborados por floristas con experiencia, cuidando cada detalle para transmitir emociones a través de cada arreglo. Nos encontramos en Ramón Espinoza 10, Rímac 15001, Lima, Perú, brindando atención personalizada y ofreciendo una amplia variedad de ramos, cajas florales, canastas, plantas ornamentales y regalos complementarios. Nuestro compromiso es ofrecer productos de excelente calidad, puntualidad en las entregas y un servicio que supere las expectativas de nuestros clientes."
+		/>
+
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon-light.svg"
+			media="(prefers-color-scheme: no-preference)"
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon-dark.svg"
+			media="(prefers-color-scheme: dark)"
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon-light.svg"
+			media="(prefers-color-scheme: light)"
+		/>
+
+		<link
+			rel="preload"
+			as="image"
+			href="/banner-principal.webp"
+			imagesrcset="
+				/banner-principal.webp 1x,
+				/banner-principal.webp 2x
+			"
+		/>
+
+		<meta
+			name="keywords"
+			content="florería en Lima, florería en Rímac, arreglos florales Lima, flores a domicilio Lima, florería Rímac, ramos de flores, arreglos florales personalizados, flores para cumpleaños, flores para aniversarios, flores para bodas, flores para graduación, flores para condolencias, rosas naturales, girasoles, orquídeas, lirios, tulipanes, canastas florales, cajas de flores, regalos con flores, florista en Lima, envío de flores Lima, flores frescas, florería cerca de mí, Ramón Espinoza 10, Rímac 15001, Lima Perú"
+		/>
+
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Entre Rozas" />
+		<link rel="canonical" href="https://entrerozas.pe" />
+
+		<title>Entre Rozas</title>
+
+	</head>
+	<body>
+		<Header />
+		<main class="relative w-full">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
