@@ -1,5 +1,5 @@
 ---
-import { Sun, Moon } from '@lucide/astro'
+import { Sun, Moon, Menu, X, ShoppingCart } from '@lucide/astro'
 ---
 
 <header
@@ -8,10 +8,23 @@ import { Sun, Moon } from '@lucide/astro'
     <div
         class="max-w-7xl mx-auto p-3 sm:p-4 flex items-center justify-between gap-2 sm:gap-4"
     >
-        <nav class="flex gap-2 sm:gap-6 text-xs sm:text-base">
-            <a href="#shop" class="link-nav"> Comprar </a>
-            <a href="#contact" class="link-nav"> Contacto </a>
-        </nav>
+        <div class="relative shrink-0">
+            <button
+                id="menu-toggle"
+                class="cursor-pointer p-2 rounded-lg hover:bg-muted transition text-foreground sm:hidden"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+            >
+                <Menu size={24} class="block" data-menu-icon="open" />
+                <X size={24} class="hidden" data-menu-icon="close" />
+            </button>
+
+            <nav class="hidden sm:flex gap-2 sm:gap-6 text-xs sm:text-base">
+                <a href="#shop" class="link-nav"> Comprar </a>
+                <a href="#contact" class="link-nav"> Contacto </a>
+            </nav>
+        </div>
         <div class="text-center flex-1 min-w-0">
             <h1
                 class="text-xl font-light tracking-wide text-primary sm:text-3xl"
@@ -22,22 +35,172 @@ import { Sun, Moon } from '@lucide/astro'
                 Arreglos Florales de Primera Calidad
             </p>
         </div>
-        <button
-            id="theme-toggle"
-            class="cursor-pointer p-2 rounded-lg hover:bg-muted transition text-foreground shrink-0"
-            aria-label="Cambiar tema"
-        >
-            <Sun size={24} class="btn-theme block dark:hidden" />
-            <Moon size={24} class="btn-theme hidden dark:block" />
-        </button>
+        <div class="flex items-center gap-1 shrink-0 sm:gap-2">
+            <button
+                id="cart-toggle"
+                class="cursor-pointer p-2 rounded-lg hover:bg-muted transition text-foreground"
+                aria-label="Ver carrito"
+                aria-expanded="false"
+                aria-controls="cart-panel"
+            >
+                <ShoppingCart size={24} class="btn-theme block" />
+            </button>
+            <button
+                id="theme-toggle"
+                class="cursor-pointer p-2 rounded-lg hover:bg-muted transition text-foreground"
+                aria-label="Cambiar tema"
+            >
+                <Sun size={24} class="btn-theme block dark:hidden" />
+                <Moon size={24} class="btn-theme hidden dark:block" />
+            </button>
+        </div>
     </div>
 </header>
 
-<script>
-    const button = document.getElementById('theme-toggle')
+<div
+    id="drawer-overlay"
+    class="hidden fixed inset-0 bg-black/50 z-40 transition-opacity"
+>
+</div>
 
-    button?.addEventListener('click', () => {
+<aside
+    id="nav-menu"
+    class="fixed top-0 left-0 z-50 flex h-full w-72 max-w-[80%] -translate-x-full flex-col bg-card border-r border-border shadow-lg transition-transform duration-300 sm:hidden"
+>
+    <div class="flex items-center justify-between p-4 border-b border-border">
+        <span class="card-title">Menú</span>
+        <button
+            id="nav-menu-close"
+            class="cursor-pointer p-2 rounded-lg hover:bg-muted transition text-foreground"
+            aria-label="Cerrar menú"
+        >
+            <X size={20} />
+        </button>
+    </div>
+    <nav class="flex flex-col gap-1 p-4">
+        <a href="#shop" class="link-nav rounded px-3 py-2 hover:bg-muted">
+            Comprar
+        </a>
+        <a href="#contact" class="link-nav rounded px-3 py-2 hover:bg-muted">
+            Contacto
+        </a>
+    </nav>
+</aside>
+
+<aside
+    id="cart-panel"
+    class="fixed top-0 right-0 z-50 flex h-full w-80 max-w-[85%] translate-x-full flex-col bg-card border-l border-border shadow-lg transition-transform duration-300"
+>
+    <div class="flex items-center justify-between p-4 border-b border-border">
+        <span class="card-title">Carrito</span>
+        <button
+            id="cart-panel-close"
+            class="cursor-pointer p-2 rounded-lg hover:bg-muted transition text-foreground"
+            aria-label="Cerrar carrito"
+        >
+            <X size={20} />
+        </button>
+    </div>
+    <div class="flex-1 overflow-y-auto p-4">
+        <p class="body-sm text-muted-foreground">Tu carrito está vacío.</p>
+    </div>
+</aside>
+
+<script>
+    const themeToggle = document.getElementById('theme-toggle')
+
+    themeToggle?.addEventListener('click', () => {
         const isDark = document.documentElement.classList.toggle('dark')
         localStorage.setItem('theme', isDark ? 'dark' : 'light')
+    })
+
+    const menuToggle = document.getElementById('menu-toggle')
+    const navMenu = document.getElementById('nav-menu')
+    const menuOpenIcon = menuToggle?.querySelector('[data-menu-icon="open"]')
+    const menuCloseIcon = menuToggle?.querySelector('[data-menu-icon="close"]')
+    const navMenuClose = document.getElementById('nav-menu-close')
+
+    const cartToggle = document.getElementById('cart-toggle')
+    const cartPanel = document.getElementById('cart-panel')
+    const cartPanelClose = document.getElementById('cart-panel-close')
+
+    const drawerOverlay = document.getElementById('drawer-overlay')
+
+    function updateOverlay() {
+        const isAnyOpen =
+            !navMenu?.classList.contains('-translate-x-full') ||
+            !cartPanel?.classList.contains('translate-x-full')
+
+        drawerOverlay?.classList.toggle('hidden', !isAnyOpen)
+        document.body.classList.toggle('overflow-hidden', isAnyOpen)
+    }
+
+    function closeMenu() {
+        navMenu?.classList.add('-translate-x-full')
+        navMenu?.classList.remove('translate-x-0')
+        menuOpenIcon?.classList.remove('hidden')
+        menuCloseIcon?.classList.add('hidden')
+        menuToggle?.setAttribute('aria-expanded', 'false')
+        updateOverlay()
+    }
+
+    function openMenu() {
+        closeCart()
+        navMenu?.classList.remove('-translate-x-full')
+        navMenu?.classList.add('translate-x-0')
+        menuOpenIcon?.classList.add('hidden')
+        menuCloseIcon?.classList.remove('hidden')
+        menuToggle?.setAttribute('aria-expanded', 'true')
+        updateOverlay()
+    }
+
+    function closeCart() {
+        cartPanel?.classList.add('translate-x-full')
+        cartPanel?.classList.remove('translate-x-0')
+        cartToggle?.setAttribute('aria-expanded', 'false')
+        updateOverlay()
+    }
+
+    function openCart() {
+        closeMenu()
+        cartPanel?.classList.remove('translate-x-full')
+        cartPanel?.classList.add('translate-x-0')
+        cartToggle?.setAttribute('aria-expanded', 'true')
+        updateOverlay()
+    }
+
+    menuToggle?.addEventListener('click', () => {
+        if (navMenu?.classList.contains('-translate-x-full')) {
+            openMenu()
+        } else {
+            closeMenu()
+        }
+    })
+
+    cartToggle?.addEventListener('click', () => {
+        if (cartPanel?.classList.contains('translate-x-full')) {
+            openCart()
+        } else {
+            closeCart()
+        }
+    })
+
+    navMenuClose?.addEventListener('click', closeMenu)
+    cartPanelClose?.addEventListener('click', closeCart)
+
+    navMenu?.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeMenu)
+    })
+
+    drawerOverlay?.addEventListener('click', () => {
+        closeMenu()
+        closeCart()
+    })
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeMenu()
+            closeCart()
+        }
     })
 </script>
