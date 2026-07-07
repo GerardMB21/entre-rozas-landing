@@ -1,0 +1,39 @@
+---
+import type { Flower } from '@interfaces/carousel.ts'
+import { ChevronLeft, ChevronRight } from '@lucide/astro'
+import Card from './Card.astro'
+import Dot from './Dot.astro'
+
+export interface Props {
+    flowers: Flower[]
+}
+
+const { flowers } = Astro.props
+---
+
+<section class="mt-24 px-4 py-12">
+    <div class="max-w-6xl mx-auto">
+        <div
+            class="relative w-full aspect-video overflow-hidden rounded-2xl bg-card shadow-lg"
+        >
+            <div class="relative w-full h-full">
+                {
+                    flowers.map((flower, index) => (
+                        <Card index={index} flower={flower} />
+                    ))
+                }
+            </div>
+            <button class="btn-carousel left-4" aria-label="Previous slide">
+                <ChevronLeft size={24} />
+            </button>
+            <button class="btn-carousel right-4" aria-label="Next slide">
+                <ChevronRight size={24} />
+            </button>
+            <div
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10"
+            >
+                {flowers.map((_, index) => <Dot index={index} />)}
+            </div>
+        </div>
+    </div>
+</section>

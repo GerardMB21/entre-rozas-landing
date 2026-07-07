@@ -1,7 +1,47 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import Carousel from '@components/carousel'
+
+const flowers = [
+    {
+        id: 1,
+        name: 'Premium Rose Bouquet',
+        image: '/flowers-rose-bouquet.webp',
+        description: 'Luxurious red and pink roses',
+        price: '$89.99',
+        width: 1152,
+        height: 648,
+    },
+    {
+        id: 2,
+        name: 'Sunny Sunflower Mix',
+        image: '/flowers-sunflower.webp',
+        description: 'Bright and cheerful arrangement',
+        price: '$74.99',
+        width: 1152,
+        height: 648,
+    },
+    {
+        id: 3,
+        name: 'Spring Tulips',
+        image: '/flowers-tulips.webp',
+        description: 'Fresh seasonal tulips',
+        price: '$69.99',
+        width: 1152,
+        height: 648,
+    },
+    {
+        id: 4,
+        name: 'Exotic Orchids',
+        image: '/flowers-orchids.webp',
+        description: 'Premium orchid collection',
+        price: '$99.99',
+        width: 1152,
+        height: 648,
+    },
+]
 ---
 
 <Layout>
-    <section></section>
+    <Carousel flowers={flowers} />
 </Layout>

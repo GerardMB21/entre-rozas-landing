@@ -9,6 +9,7 @@
             "@styles/*": ["./src/styles/*"],
             "@layouts/*": ["./src/layouts/*"],
             "@components/*": ["./src/components/*"],
+            "@interfaces/*": ["./src/interfaces/*"],
             "@svg/*": ["./src/svg/*"],
             "@assets/*": ["./src/assets/*"],
             "@utils/*": ["./src/utils/*"]

@@ -3,10 +3,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+    --font-playfair: 'Playfair Display', serif;
+    --font-lora: 'Lora', serif;
+
+    --color-dark-brown: #2d2922;
+
     --color-primary: #c17a6b;
     --color-primary-foreground: #ffffff;
     --color-background: #f5eae3;
-    --color-foreground: #2d2922;
+    --color-foreground: var(--color-dark-brown);
     --color-card: #ffffff;
     --color-card-foreground: #2d2922;
     --color-muted: #e8e3dc;
@@ -26,6 +31,83 @@
     --color-muted-foreground: #a6a6a6;
     --color-border: #262626;
     --color-input: #333333;
+}
+
+/* Carousel */
+.btn-carousel {
+    @apply absolute cursor-pointer top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-dark-brown p-3 rounded-full transition;
+}
+
+.btn-dot {
+    @apply h-2 cursor-pointer rounded-full transition;
+}
+
+.btn-dot-expand {
+    @apply bg-white w-8;
+}
+
+.btn-dot-default {
+    @apply bg-white/50 w-2;
+}
+
+/* Headings */
+.h1-xl {
+    @apply font-playfair text-4xl font-light tracking-wide;
+}
+
+.h1 {
+    @apply font-playfair text-3xl font-light tracking-wide;
+}
+
+.h2 {
+    @apply font-playfair text-2xl font-medium;
+}
+
+.h3 {
+    @apply font-playfair text-xl font-medium;
+}
+
+/* Body Text */
+.body {
+    @apply font-lora text-base font-normal;
+}
+
+.body-lg {
+    @apply font-lora text-lg font-normal;
+}
+
+.body-sm {
+    @apply font-lora text-sm font-normal;
+}
+
+/* Captions & Labels */
+.caption {
+    @apply font-lora text-xs font-normal uppercase tracking-widest;
+}
+
+.label {
+    @apply font-lora text-sm font-medium uppercase;
+}
+
+.subtitle {
+    @apply font-lora text-sm font-normal;
+}
+
+.subtitle-lg {
+    @apply font-lora text-base font-medium;
+}
+
+/* Special sections */
+.section-title {
+    @apply font-playfair text-4xl font-light text-center;
+}
+
+.card-title {
+    @apply font-lora font-medium;
+}
+
+.card-description {
+    @apply font-lora text-sm;
 }
 
 html {
