@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import Carousel from '@components/carousel'
+import Featured from '@components/featured'
 
 const flowers = [
     {
@@ -44,4 +45,5 @@ const flowers = [
 
 <Layout>
     <Carousel flowers={flowers} />
+    <Featured flowers={flowers} />
 </Layout>

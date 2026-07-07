@@ -1,0 +1,36 @@
+---
+import type { Flower } from '@/interfaces/carousel'
+import { Image } from 'astro:assets'
+
+export interface Props {
+    flower: Flower
+}
+
+const { flower } = Astro.props
+---
+
+<div class="card-featured group">
+    <div class="card-image-featured">
+        <Image
+            class="image-featured"
+            src={flower.image}
+            alt={flower.name}
+            width={flower.width}
+            height={flower.height}
+        />
+    </div>
+    <div class="p-4">
+        <h3 class="card-title text-foreground mb-1">
+            {flower.name}
+        </h3>
+        <p class="card-description text-muted-foreground mb-3">
+            {flower.description}
+        </p>
+        <div class="flex items-center justify-between">
+            <span class="text-lg font-medium text-primary">
+                {flower.price}
+            </span>
+            <button class="btn-add-shopping"> Añadir al carro </button>
+        </div>
+    </div>
+</div>
