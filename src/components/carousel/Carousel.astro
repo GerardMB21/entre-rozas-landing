@@ -85,7 +85,24 @@ const { flowers } = Astro.props
             dot.addEventListener('click', () => goTo(i))
         })
 
+        let autoplay: ReturnType<typeof setInterval> | null = null
+
+        function startAutoplay() {
+            if (autoplay) return
+            autoplay = setInterval(() => goTo(current + 1), 3000)
+        }
+
+        function stopAutoplay() {
+            if (!autoplay) return
+            clearInterval(autoplay)
+            autoplay = null
+        }
+
+        root.addEventListener('mouseenter', stopAutoplay)
+        root.addEventListener('mouseleave', startAutoplay)
+
         goTo(0)
+        startAutoplay()
     }
 
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
