@@ -93,6 +93,15 @@
     @apply font-lora text-sm;
 }
 
+/* Header */
+.link-nav {
+    @apply text-foreground hover:text-primary transition font-medium;
+}
+
+.btn-theme {
+    @apply sm:w-6 sm:h-6;
+}
+
 /* Carousel */
 .btn-carousel {
     @apply absolute cursor-pointer top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-dark-brown p-3 rounded-full transition;
