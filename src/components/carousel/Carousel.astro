@@ -1,5 +1,5 @@
 ---
-import type { Flower } from '@interfaces/carousel.ts'
+import type { Flower } from '@interfaces/carousel'
 import { ChevronLeft, ChevronRight } from '@lucide/astro'
 import Card from './Card.astro'
 import Dot from './Dot.astro'
@@ -14,6 +14,7 @@ const { flowers } = Astro.props
 <section class="mt-24 px-4 py-12">
     <div class="max-w-6xl mx-auto">
         <div
+            data-carousel
             class="relative w-full aspect-video overflow-hidden rounded-2xl bg-card shadow-lg"
         >
             <div class="relative w-full h-full">
@@ -23,10 +24,18 @@ const { flowers } = Astro.props
                     ))
                 }
             </div>
-            <button class="btn-carousel left-4" aria-label="Previous slide">
+            <button
+                data-carousel-prev
+                class="btn-carousel left-4"
+                aria-label="Previous slide"
+            >
                 <ChevronLeft size={24} />
             </button>
-            <button class="btn-carousel right-4" aria-label="Next slide">
+            <button
+                data-carousel-next
+                class="btn-carousel right-4"
+                aria-label="Next slide"
+            >
                 <ChevronRight size={24} />
             </button>
             <div
@@ -37,3 +46,49 @@ const { flowers } = Astro.props
         </div>
     </div>
 </section>
+
+<script>
+    function setupCarousel(root: HTMLElement) {
+        const slides = Array.from(
+            root.querySelectorAll<HTMLElement>('[data-carousel-slide]'),
+        )
+        const dots = Array.from(
+            root.querySelectorAll<HTMLElement>('[data-carousel-dot]'),
+        )
+        const prevBtn = root.querySelector<HTMLElement>('[data-carousel-prev]')
+        const nextBtn = root.querySelector<HTMLElement>('[data-carousel-next]')
+
+        if (slides.length === 0) return
+
+        let current = 0
+
+        function goTo(index: number) {
+            current = (index + slides.length) % slides.length
+
+            slides.forEach((slide, i) => {
+                const active = i === current
+                slide.classList.toggle('opacity-100', active)
+                slide.classList.toggle('opacity-0', !active)
+            })
+
+            dots.forEach((dot, i) => {
+                const active = i === current
+                dot.classList.toggle('btn-dot-expand', active)
+                dot.classList.toggle('btn-dot-default', !active)
+            })
+        }
+
+        prevBtn?.addEventListener('click', () => goTo(current - 1))
+        nextBtn?.addEventListener('click', () => goTo(current + 1))
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => goTo(i))
+        })
+
+        goTo(0)
+    }
+
+    document
+        .querySelectorAll<HTMLElement>('[data-carousel]')
+        .forEach(setupCarousel)
+</script>

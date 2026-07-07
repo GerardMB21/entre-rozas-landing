@@ -1,17 +1,12 @@
 ---
-import { cn } from '@/utils/tailwindcss'
-
 export interface Props {
     index: number
 }
 
-const currentSlide = 0
 const { index } = Astro.props
 ---
 
 <button
-    class={cn(
-        'btn-dot',
-        index == currentSlide ? 'btn-dot-expand' : 'btn-dot-default',
-    )}
+    data-carousel-dot={index}
+    class="btn-dot"
     aria-label={`Go to slide ${index + 1}`}></button>

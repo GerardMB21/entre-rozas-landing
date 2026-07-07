@@ -7,14 +7,12 @@ export interface Props {
     flower: Flower
 }
 
-const currentSlide = 0
 const { index, flower } = Astro.props
 ---
 
 <div
-    class={`absolute flex items-center justify-center inset-0 transition-opacity duration-500 ${
-        index === currentSlide ? 'opacity-100' : 'opacity-0'
-    }`}
+    data-carousel-slide={index}
+    class="absolute flex items-center justify-center inset-0 transition-opacity duration-500"
 >
     <Image
         src={flower.image}
