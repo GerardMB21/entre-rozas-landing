@@ -9,6 +9,23 @@ export default tseslint.config(
     ...tseslint.configs.recommended,
     ...astro.configs.recommended,
     {
+        files: ['**/*.astro'],
+        languageOptions: {
+            parserOptions: {
+                parser: tseslint.parser,
+            },
+        },
+    },
+    {
+        files: ['**/*.astro/*.ts', '*.astro/*.ts'],
+        languageOptions: {
+            parser: tseslint.parser,
+            parserOptions: {
+                sourceType: 'module',
+            },
+        },
+    },
+    {
         languageOptions: {
             globals: {
                 ...globals.browser,
