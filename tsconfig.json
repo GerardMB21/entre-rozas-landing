@@ -10,6 +10,7 @@
             "@layouts/*": ["./src/layouts/*"],
             "@components/*": ["./src/components/*"],
             "@interfaces/*": ["./src/interfaces/*"],
+            "@stores/*": ["./src/stores/*"],
             "@svg/*": ["./src/svg/*"],
             "@assets/*": ["./src/assets/*"],
             "@utils/*": ["./src/utils/*"]

@@ -30,7 +30,16 @@ const { flower } = Astro.props
             <span class="text-lg font-medium text-primary">
                 {flower.price}
             </span>
-            <button class="btn-add-shopping"> Añadir al carro </button>
+            <button
+                class="btn-add-shopping"
+                data-add-to-cart
+                data-id={flower.id}
+                data-name={flower.name}
+                data-image={flower.image}
+                data-price={flower.price}
+            >
+                Añadir al carro
+            </button>
         </div>
     </div>
 </div>

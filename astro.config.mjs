@@ -17,6 +17,7 @@ export default defineConfig({
                     .pathname,
                 '@interfaces': new URL('./src/interfaces', import.meta.url)
                     .pathname,
+                '@stores': new URL('./src/stores', import.meta.url).pathname,
                 '@svg': new URL('./src/svg', import.meta.url).pathname,
                 '@assets': new URL('./src/assets', import.meta.url).pathname,
                 '@utils': new URL('./src/utils', import.meta.url).pathname,

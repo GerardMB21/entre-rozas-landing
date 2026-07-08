@@ -17,3 +17,27 @@ const { flowers } = Astro.props
         </div>
     </div>
 </section>
+
+<script>
+    import { cart } from '@stores/cart'
+    import type { Flower } from '@interfaces/carousel'
+
+    document.addEventListener('click', (event) => {
+        const target = event.target as HTMLElement
+        const button = target.closest('[data-add-to-cart]') as HTMLButtonElement | null
+        if (!button) return
+
+        const flower: Flower = {
+            id: Number(button.dataset.id),
+            name: button.dataset.name ?? '',
+            image: button.dataset.image ?? '',
+            price: button.dataset.price ?? '',
+            description: '',
+            width: 0,
+            height: 0,
+        }
+
+        cart.add(flower)
+        window.dispatchEvent(new CustomEvent('cart:open'))
+    })
+</script>
