@@ -1,0 +1,65 @@
+---
+import { Mail, MapPin, Phone } from '@lucide/astro'
+---
+
+<section class="py-12 sm:py-16 px-3 sm:px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2
+            class="section-title mb-8 sm:mb-12 text-primary text-2xl sm:text-4xl"
+        >
+            Visit Our Store
+        </h2>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center"
+        >
+            <div class="space-y-6">
+                <div class="flex gap-4">
+                    <MapPin class="text-primary mt-1 shrink-0" size={24} />
+                    <div>
+                        <h3 class="font-medium text-foreground mb-1">
+                            Address
+                        </h3>
+                        <p class="text-foreground/70">
+                            123 Flower Street, Garden City, CA 90210
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <Phone class="text-primary mt-1 shrink-0" size={24} />
+                    <div>
+                        <h3 class="font-medium text-foreground mb-1">Phone</h3>
+                        <p class="text-foreground/70">(555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <Mail class="text-primary mt-1 shrink-0" size={24} />
+                    <div>
+                        <h3 class="font-medium text-foreground mb-1">Email</h3>
+                        <p class="text-foreground/70">hello@bloomblossom.com</p>
+                    </div>
+                </div>
+                <div class="mt-8 p-6 bg-card rounded-lg">
+                    <h3 class="font-medium mb-3 text-foreground">Hours</h3>
+                    <div class="space-y-2 text-sm text-foreground/70">
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 5:00 PM</p>
+                        <p>Sunday: 11:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-muted rounded-lg aspect-square flex items-center justify-center"
+            >
+                <div class="text-center">
+                    <MapPin
+                        size={48}
+                        class="text-primary mx-auto mb-4 opacity-50"
+                    />
+                    <p class="text-foreground/70">
+                        Interactive map would display here
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

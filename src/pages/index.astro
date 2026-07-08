@@ -2,6 +2,10 @@
 import Layout from '@layouts/Layout.astro'
 import Carousel from '@components/carousel'
 import Featured from '@components/featured'
+import Location from '@components/location'
+import Testimonials from '@components/testimonials'
+import Shopping from '@components/shopping'
+import Contact from '@components/contact'
 
 const flowers = [
     {
@@ -41,9 +45,34 @@ const flowers = [
         height: 648,
     },
 ]
+
+const testimonials = [
+    {
+        name: 'Sarah Johnson',
+        role: 'Wedding Client',
+        review: 'The arrangements were absolutely stunning! Every flower was fresh and beautiful. Thank you for making our special day perfect.',
+        rating: 5,
+    },
+    {
+        name: 'Michael Chen',
+        role: 'Corporate Client',
+        review: 'Professional service and gorgeous flowers. We send Bloom & Blossom arrangements to all our important clients. Highly recommended!',
+        rating: 5,
+    },
+    {
+        name: 'Emma Rodriguez',
+        role: 'Regular Customer',
+        review: 'I love ordering from here. The quality is consistently excellent and they always deliver with a smile. Best florist in town!',
+        rating: 5,
+    },
+]
 ---
 
 <Layout>
     <Carousel flowers={flowers} />
     <Featured flowers={flowers} />
+    <Location />
+    <Testimonials testimonials={testimonials} />
+    <Shopping />
+    <Contact />
 </Layout>

@@ -1,0 +1,49 @@
+---
+import type { Testimonial } from '@/interfaces/testimonials'
+import { Star } from '@lucide/astro'
+
+export interface Props {
+    testimonials: Testimonial[]
+}
+
+const { testimonials } = Astro.props
+---
+
+<section class="py-12 sm:py-16 px-3 sm:px-4 bg-card/50">
+    <div class="max-w-6xl mx-auto">
+        <h2
+            class="section-title mb-8 sm:mb-12 text-primary text-2xl sm:text-4xl"
+        >
+            What Our Customers Say
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            {
+                testimonials.map((testimonial) => (
+                    <div class="bg-background rounded-lg p-6 shadow hover:shadow-lg transition">
+                        <div class="flex gap-1 mb-4">
+                            {Array.from({ length: testimonial.rating }).map(
+                                () => (
+                                    <Star
+                                        size={16}
+                                        class="fill-primary text-primary"
+                                    />
+                                ),
+                            )}
+                        </div>
+                        <p class="text-foreground/80 mb-4 italic">
+                            "{testimonial.review}"
+                        </p>
+                        <div>
+                            <p class="font-medium text-foreground">
+                                {testimonial.name}
+                            </p>
+                            <p class="text-sm text-muted-foreground">
+                                {testimonial.role}
+                            </p>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
