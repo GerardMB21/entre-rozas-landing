@@ -6,6 +6,10 @@ import Location from '@components/location'
 import Testimonials from '@components/testimonials'
 import Shopping from '@components/shopping'
 import Contact from '@components/contact'
+import { MapPin, Phone, Mail } from '@lucide/astro'
+
+const phone = '977445864'
+const email = 'contacto@entrerozas.pe'
 
 const flowers = [
     {
@@ -45,7 +49,6 @@ const flowers = [
         height: 648,
     },
 ]
-
 const testimonials = [
     {
         name: 'Sarah Johnson',
@@ -66,12 +69,39 @@ const testimonials = [
         rating: 5,
     },
 ]
+const locationInfo = {
+    address: 'Ramon Espinoza 10, Rímac 15001',
+    addressLink: 'https://maps.app.goo.gl/ZvSGKjvAHodMKU1B7',
+    phone: '977445864',
+    email: 'contacto@entrerozas.pe',
+    locationItems: [
+        {
+            icon: MapPin,
+            name: 'Dirección',
+            linkRef: 'https://maps.app.goo.gl/ZvSGKjvAHodMKU1B7',
+            text: 'Ramon Espinoza 10, Rímac 15001',
+        },
+        {
+            icon: Phone,
+            name: 'Teléfono',
+            linkRef: `tel:+51${phone}`,
+            text: phone,
+        },
+        {
+            icon: Mail,
+            name: 'Email',
+            linkRef: `mailto:${email}`,
+            text: email,
+        },
+    ],
+    timeSchedule: ['Lun - Vier: 8:00 am - 5:00 pm', 'Sab: 8:00 am - 1:00 pm'],
+}
 ---
 
 <Layout>
     <Carousel flowers={flowers} />
     <Featured flowers={flowers} />
-    <Location />
+    <Location locationInfo={locationInfo} />
     <Testimonials testimonials={testimonials} />
     <Shopping />
     <Contact />

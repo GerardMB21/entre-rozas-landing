@@ -1,0 +1,15 @@
+---
+import type { LocationItem } from '@interfaces/location'
+
+type Props = LocationItem
+
+const { icon: Icon, name, linkRef, text } = Astro.props
+---
+
+<div class="flex gap-4">
+    <Icon class="text-primary mt-1 shrink-0" size={24} />
+    <div>
+        <h3 class="font-medium text-foreground mb-1">{name}</h3>
+        <a class="text-foreground/70" target="_blank" href={linkRef}>{text}</a>
+    </div>
+</div>
