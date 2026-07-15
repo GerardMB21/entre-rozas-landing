@@ -49,6 +49,62 @@ const flowers = [
         height: 648,
     },
 ]
+const moreFlowers = [
+    {
+        id: 5,
+        name: 'Classic Red Roses',
+        image: '/flowers-rose-bouquet.webp',
+        description: 'Timeless dozen red roses',
+        price: '$84.99',
+        width: 1152,
+        height: 648,
+    },
+    {
+        id: 6,
+        name: 'Golden Sunflowers',
+        image: '/flowers-sunflower.webp',
+        description: 'A burst of summer sunshine',
+        price: '$64.99',
+        width: 1152,
+        height: 648,
+    },
+    {
+        id: 7,
+        name: 'Pastel Tulip Bunch',
+        image: '/flowers-tulips.webp',
+        description: 'Soft seasonal tulips',
+        price: '$59.99',
+        width: 1152,
+        height: 648,
+    },
+    {
+        id: 8,
+        name: 'White Orchid Elegance',
+        image: '/flowers-orchids.webp',
+        description: 'Graceful white orchids',
+        price: '$109.99',
+        width: 1152,
+        height: 648,
+    },
+    {
+        id: 9,
+        name: 'Romantic Rose Box',
+        image: '/flowers-rose-bouquet.webp',
+        description: 'Roses in a keepsake box',
+        price: '$94.99',
+        width: 1152,
+        height: 648,
+    },
+    {
+        id: 10,
+        name: 'Mixed Spring Blooms',
+        image: '/flowers-tulips.webp',
+        description: 'A cheerful seasonal mix',
+        price: '$72.99',
+        width: 1152,
+        height: 648,
+    },
+]
 const testimonials = [
     {
         name: 'Sarah Johnson',
@@ -100,7 +156,7 @@ const locationInfo = {
 
 <Layout>
     <Carousel flowers={flowers} />
-    <Featured flowers={flowers} />
+    <Featured flowers={flowers} moreFlowers={moreFlowers} />
     <Location locationInfo={locationInfo} />
     <Testimonials testimonials={testimonials} />
     <Shopping />

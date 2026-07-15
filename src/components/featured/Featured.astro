@@ -1,12 +1,14 @@
 ---
 import type { Flower } from '@interfaces/carousel'
 import Card from './Card.astro'
+import { X } from '@lucide/astro'
 
 export interface Props {
     flowers: Flower[]
+    moreFlowers?: Flower[]
 }
 
-const { flowers } = Astro.props
+const { flowers, moreFlowers = [] } = Astro.props
 ---
 
 <section id="shop" class="py-16 px-4">
@@ -15,8 +17,47 @@ const { flowers } = Astro.props
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {flowers.map((flower) => <Card flower={flower} />)}
         </div>
+        {
+            moreFlowers.length > 0 && (
+                <div class="mt-10 text-center">
+                    <button
+                        id="more-products-open"
+                        class="cursor-pointer font-medium text-primary underline underline-offset-4 hover:opacity-80 transition"
+                    >
+                        Ver más productos
+                    </button>
+                </div>
+            )
+        }
     </div>
 </section>
+
+{
+    moreFlowers.length > 0 && (
+        <dialog
+            id="more-products-dialog"
+            class="fixed inset-0 m-auto h-fit max-h-[85vh] w-[92%] max-w-5xl rounded-xl bg-card p-0 text-foreground shadow-xl backdrop:bg-black/50"
+        >
+            <div class="flex items-center justify-between border-b border-border p-4">
+                <h3 class="card-title text-lg text-foreground">
+                    Más productos
+                </h3>
+                <button
+                    id="more-products-close"
+                    class="cursor-pointer rounded-lg p-2 text-foreground hover:bg-muted transition"
+                    aria-label="Cerrar"
+                >
+                    <X size={20} />
+                </button>
+            </div>
+            <div class="grid max-h-[70vh] grid-cols-1 gap-6 overflow-y-auto p-4 sm:grid-cols-2 lg:grid-cols-3">
+                {moreFlowers.map((flower) => (
+                    <Card flower={flower} />
+                ))}
+            </div>
+        </dialog>
+    )
+}
 
 <script>
     import { cart } from '@stores/cart'
@@ -39,5 +80,20 @@ const { flowers } = Astro.props
 
         cart.add(flower)
         window.dispatchEvent(new CustomEvent('cart:open'))
+    })
+
+    // --- More products dialog ---
+    const moreDialog = document.getElementById(
+        'more-products-dialog',
+    ) as HTMLDialogElement | null
+    const moreOpen = document.getElementById('more-products-open')
+    const moreClose = document.getElementById('more-products-close')
+
+    moreOpen?.addEventListener('click', () => moreDialog?.showModal())
+    moreClose?.addEventListener('click', () => moreDialog?.close())
+
+    // Close when clicking the backdrop.
+    moreDialog?.addEventListener('click', (event) => {
+        if (event.target === moreDialog) moreDialog.close()
     })
 </script>
