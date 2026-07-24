@@ -4,6 +4,8 @@ dist/
 .astro/
 # vs code setting folder
 .vscode/
+# claude settings local
+.claude/
 
 # dependencies
 node_modules/
