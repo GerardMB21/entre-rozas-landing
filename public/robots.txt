@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://entrerozas.pe.aws.gerardmatos.com/sitemap-index.xml
