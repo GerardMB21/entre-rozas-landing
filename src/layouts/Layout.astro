@@ -17,11 +17,26 @@ import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 import WhatsAppButton from '@components/WhatsAppButton.astro'
 
+interface Props {
+    title?: string
+    description?: string
+    image?: string
+}
+
+const {
+    title = 'Entre Rozas | Florería en Lima y Rímac',
+    description = 'Florería en Lima con arreglos florales frescos para cumpleaños, aniversarios, bodas y condolencias. Entrega a domicilio en Rímac y Lima, Perú.',
+    image = '/flowers-rose-bouquet.webp',
+} = Astro.props
+
 const whatsappPhone = '51977445864'
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const ogImageURL = new URL(image, Astro.site)
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es-PE">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -37,28 +52,22 @@ const whatsappPhone = '51977445864'
                 document.documentElement.classList.add('dark')
             }
         </script>
-        <meta
-            name="description"
-            content="Bienvenido a nuestra florería en Lima, donde convertimos cada ocasión especial en un momento inolvidable. Nos especializamos en la creación de arreglos florales personalizados para cumpleaños, aniversarios, bodas, graduaciones, nacimientos, condolencias y todo tipo de celebraciones. Trabajamos con flores frescas de alta calidad y diseños elaborados por floristas con experiencia, cuidando cada detalle para transmitir emociones a través de cada arreglo. Nos encontramos en Ramón Espinoza 10, Rímac 15001, Lima, Perú, brindando atención personalizada y ofreciendo una amplia variedad de ramos, cajas florales, canastas, plantas ornamentales y regalos complementarios. Nuestro compromiso es ofrecer productos de excelente calidad, puntualidad en las entregas y un servicio que supere las expectativas de nuestros clientes."
-        />
 
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/favicon-light.svg"
-            media="(prefers-color-scheme: no-preference)"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/favicon-dark.svg"
-            media="(prefers-color-scheme: dark)"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/favicon-light.svg"
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonicalURL} />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        <meta
+            name="theme-color"
+            content="#c17a6b"
             media="(prefers-color-scheme: light)"
+        />
+        <meta
+            name="theme-color"
+            content="#e8a297"
+            media="(prefers-color-scheme: dark)"
         />
 
         <meta
@@ -68,9 +77,19 @@ const whatsappPhone = '51977445864'
 
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Entre Rozas" />
-        <link rel="canonical" href="https://entrerozas.pe" />
 
-        <title>Entre Rozas</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Entre Rozas" />
+        <meta property="og:locale" content="es_PE" />
+        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={ogImageURL} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={ogImageURL} />
     </head>
     <body class="min-h-screen bg-background text-foreground">
         <Header whatsappPhone={whatsappPhone} />

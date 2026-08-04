@@ -152,9 +152,46 @@ const locationInfo = {
     ],
     timeSchedule: ['Lun - Vier: 8:00 am - 5:00 pm', 'Sab: 8:00 am - 1:00 pm'],
 }
+
+const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Florist',
+    name: 'Entre Rozas',
+    image: new URL('/flowers-rose-bouquet.webp', Astro.site).toString(),
+    url: Astro.site?.toString(),
+    telephone: `+51${phone}`,
+    email,
+    priceRange: '$$',
+    address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Ramón Espinoza 10',
+        addressLocality: 'Rímac',
+        addressRegion: 'Lima',
+        postalCode: '15001',
+        addressCountry: 'PE',
+    },
+    openingHoursSpecification: [
+        {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            opens: '08:00',
+            closes: '17:00',
+        },
+        {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Saturday'],
+            opens: '08:00',
+            closes: '13:00',
+        },
+    ],
+}
 ---
 
 <Layout>
+    <script
+        type="application/ld+json"
+        set:html={JSON.stringify(structuredData)}
+    />
     <Carousel flowers={flowers} />
     <Featured flowers={flowers} moreFlowers={moreFlowers} />
     <Location locationInfo={locationInfo} />
