@@ -5,7 +5,10 @@ interface Props {
 
 const { phone } = Astro.props
 const message = encodeURIComponent(
-    'Hola Entre Rozas 🌸, me gustaría hacer una consulta.',
+    'Hola Entre Rozas 🌸, me gustaría hacer una consulta.' +
+        `\n\nEsta consulta viene de la web https://entrerozas.pe.aws.gerardmatos.com` +
+        `\nDesarrollada por Gerard Matos, puedes contactarme en el mail: gerardmatos@gerardmatos.com` +
+        `\n¡Gracias!`,
 )
 const href = `https://wa.me/${phone}?text=${message}`
 ---
