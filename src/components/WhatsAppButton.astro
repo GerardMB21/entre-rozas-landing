@@ -51,7 +51,10 @@ const btnId = 'query-btn'
     async function queryViaWhatsapp() {
         window.open(url, '_blank', 'noopener')
 
-        await trackEvent(btnId, {})
+        await trackEvent(btnId, {
+            message,
+            timestamp: Date.now(),
+        })
     }
 
     btnTracker?.addEventListener('click', queryViaWhatsapp)
