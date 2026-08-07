@@ -10,6 +10,10 @@ export interface CartItem {
 
 const STORAGE_KEY = 'entre-rozas-cart'
 
+export const API_URL =
+    'https://0xp59pgzy4.execute-api.us-east-1.amazonaws.com/click'
+export const whatsappPhone = '51977445864'
+
 type Listener = (items: CartItem[]) => void
 
 function load(): CartItem[] {

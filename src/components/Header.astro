@@ -5,6 +5,8 @@ interface Props {
     whatsappPhone: string
 }
 
+const btnId = 'cart-checkout'
+
 const { whatsappPhone } = Astro.props
 ---
 
@@ -129,7 +131,7 @@ const { whatsappPhone } = Astro.props
             </span>
         </div>
         <button
-            id="cart-checkout"
+            id={btnId}
             data-whatsapp-phone={whatsappPhone}
             class="mb-2 flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#25D366] py-2 text-sm font-medium text-white transition hover:opacity-90"
         >
@@ -156,8 +158,9 @@ const { whatsappPhone } = Astro.props
 </aside>
 
 <script>
-    import { cart, parsePrice, type CartItem } from '@stores/cart'
+    import { cart, parsePrice, API_URL, type CartItem } from '@stores/cart'
 
+    const btnId = 'cart-checkout'
     const themeToggle = document.getElementById('theme-toggle')
 
     themeToggle?.addEventListener('click', () => {
@@ -185,7 +188,6 @@ const { whatsappPhone } = Astro.props
         drawerOverlay?.classList.toggle('hidden', !isAnyOpen)
         document.body.classList.toggle('overflow-hidden', isAnyOpen)
     }
-
     function closeMenu() {
         navMenu?.classList.add('-translate-x-full')
         navMenu?.classList.remove('translate-x-0')
@@ -194,7 +196,6 @@ const { whatsappPhone } = Astro.props
         menuToggle?.setAttribute('aria-expanded', 'false')
         updateOverlay()
     }
-
     function openMenu() {
         closeCart()
         navMenu?.classList.remove('-translate-x-full')
@@ -204,14 +205,12 @@ const { whatsappPhone } = Astro.props
         menuToggle?.setAttribute('aria-expanded', 'true')
         updateOverlay()
     }
-
     function closeCart() {
         cartPanel?.classList.add('translate-x-full')
         cartPanel?.classList.remove('translate-x-0')
         cartToggle?.setAttribute('aria-expanded', 'false')
         updateOverlay()
     }
-
     function openCart() {
         closeMenu()
         cartPanel?.classList.remove('translate-x-full')
@@ -341,13 +340,28 @@ const { whatsappPhone } = Astro.props
     cartClear?.addEventListener('click', () => cart.clear())
 
     // --- Checkout via WhatsApp ---
-    const cartCheckout = document.getElementById('cart-checkout')
+    const cartCheckout = document.getElementById(btnId)
 
-    cartCheckout?.addEventListener('click', () => {
+    async function trackEvent(button: string, metadata = {}) {
+        try {
+            await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    button,
+                    page: window.location.pathname,
+                    metadata,
+                }),
+            })
+        } catch (error) {
+            console.log('Tracking error (no crítico):', error)
+        }
+    }
+    async function buyItems() {
         const items = cart.getItems()
         if (items.length === 0) return
 
-        const phone = cartCheckout.dataset.whatsappPhone ?? ''
+        const phone = cartCheckout?.dataset.whatsappPhone ?? ''
         const lines = items.map((item) => {
             const lineTotal = parsePrice(item.price) * item.quantity
             return `• ${item.name} x${item.quantity} — ${formatCurrency(lineTotal)}`
@@ -362,8 +376,13 @@ const { whatsappPhone } = Astro.props
             `\n¡Gracias!`
 
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+
         window.open(url, '_blank', 'noopener')
-    })
+
+        await trackEvent(btnId, {})
+    }
+
+    cartCheckout?.addEventListener('click', buyItems)
 
     window.addEventListener('cart:open', openCart)
 
