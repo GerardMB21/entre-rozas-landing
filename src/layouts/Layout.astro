@@ -38,6 +38,23 @@ const ogImageURL = new URL(image, Astro.site)
 <!doctype html>
 <html lang="es-PE">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            type="text/partytown"
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-JCP7SWENTD"
+        ></script>
+        <script type="text/partytown">
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                // eslint-disable-next-line no-undef
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'G-JCP7SWENTD')
+        </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
