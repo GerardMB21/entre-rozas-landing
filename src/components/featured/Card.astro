@@ -27,8 +27,17 @@ const { flower } = Astro.props
             {flower.description}
         </p>
         <div class="flex items-center justify-between">
-            <span class="text-lg font-medium text-primary">
-                {flower.price}
+            <span class="flex items-baseline gap-2">
+                <span class="text-lg font-medium text-primary">
+                    {flower.price}
+                </span>
+                {
+                    flower.originalPrice && (
+                        <span class="text-sm text-muted-foreground line-through">
+                            {flower.originalPrice}
+                        </span>
+                    )
+                }
             </span>
             <button
                 class="btn-add-shopping"
