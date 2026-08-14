@@ -12,7 +12,7 @@ export default defineConfig({
         sitemap(),
         partytown({
             config: {
-                forward: ['datalayer.push'],
+                forward: ['dataLayer.push'],
             },
         }),
     ],

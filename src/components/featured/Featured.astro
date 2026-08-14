@@ -60,8 +60,9 @@ const { flowers, moreFlowers = [] } = Astro.props
 }
 
 <script>
-    import { cart } from '@stores/cart'
+    import { cart, parsePrice } from '@stores/cart'
     import type { Flower } from '@interfaces/carousel'
+    import { trackAddToCart, trackViewMoreProducts } from '@utils/analytics'
 
     document.addEventListener('click', (event) => {
         const target = event.target as HTMLElement
@@ -79,6 +80,11 @@ const { flowers, moreFlowers = [] } = Astro.props
         }
 
         cart.add(flower)
+        trackAddToCart({
+            item_id: flower.id,
+            item_name: flower.name,
+            price: parsePrice(flower.price),
+        })
         window.dispatchEvent(new CustomEvent('cart:open'))
     })
 
@@ -89,7 +95,10 @@ const { flowers, moreFlowers = [] } = Astro.props
     const moreOpen = document.getElementById('more-products-open')
     const moreClose = document.getElementById('more-products-close')
 
-    moreOpen?.addEventListener('click', () => moreDialog?.showModal())
+    moreOpen?.addEventListener('click', () => {
+        trackViewMoreProducts()
+        moreDialog?.showModal()
+    })
     moreClose?.addEventListener('click', () => moreDialog?.close())
 
     // Close when clicking the backdrop.

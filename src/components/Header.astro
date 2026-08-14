@@ -159,6 +159,7 @@ const { whatsappPhone } = Astro.props
 
 <script>
     import { cart, parsePrice, type CartItem } from '@stores/cart'
+    import { trackBeginCheckout, trackWhatsAppClick } from '@utils/analytics'
 
     const btnId = 'cart-checkout'
     const themeToggle = document.getElementById('theme-toggle')
@@ -346,6 +347,17 @@ const { whatsappPhone } = Astro.props
         const items = cart.getItems()
         if (items.length === 0) return
 
+        trackBeginCheckout(
+            items.map((item) => ({
+                item_id: item.id,
+                item_name: item.name,
+                price: parsePrice(item.price),
+                quantity: item.quantity,
+            })),
+            cart.getTotal(),
+        )
+        trackWhatsAppClick('cart_checkout')
+
         const phone = cartCheckout?.dataset.whatsappPhone ?? ''
         const lines = items.map((item) => {
             const lineTotal = parsePrice(item.price) * item.quantity
@@ -357,7 +369,7 @@ const { whatsappPhone } = Astro.props
             lines.join('\n') +
             `\n\nTotal: ${formatCurrency(cart.getTotal())}` +
             `\n\nEsta consulta viene de la web https://entrerozas.pe.aws.gerardmatos.com` +
-            `\nDesarrollada por Gerard Matos, puedes contactarme en el mail: gerardmatos@gerardmatos.com` +
+            `\nDesarrollada por Gerard Matos, puedes contactarme en el mail: contact@gerardmatos.com` +
             `\n¡Gracias!`
 
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
