@@ -1,5 +1,6 @@
 ---
 import type { Flower } from '@/interfaces/carousel'
+import { ShoppingCart } from '@lucide/astro'
 import { Image } from 'astro:assets'
 
 export interface Props {
@@ -23,12 +24,21 @@ const { flower } = Astro.props
         <h3 class="card-title text-foreground mb-1">
             {flower.name}
         </h3>
-        <p class="card-description text-muted-foreground mb-3">
+        <p class="card-description text-muted-foreground mb-3 truncate">
             {flower.description}
         </p>
         <div class="flex items-center justify-between">
-            <span class="text-lg font-medium text-primary">
-                {flower.price}
+            <span class="flex items-baseline gap-2">
+                <span class="text-lg font-medium text-primary">
+                    {flower.price}
+                </span>
+                {
+                    flower.originalPrice && (
+                        <span class="text-sm text-muted-foreground line-through">
+                            {flower.originalPrice}
+                        </span>
+                    )
+                }
             </span>
             <button
                 class="btn-add-shopping"
@@ -38,7 +48,7 @@ const { flower } = Astro.props
                 data-image={flower.image}
                 data-price={flower.price}
             >
-                Añadir al carro
+                <ShoppingCart class="size-5 block" />
             </button>
         </div>
     </div>

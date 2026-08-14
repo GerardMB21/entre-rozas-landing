@@ -3,11 +3,19 @@ import { defineConfig } from 'astro/config'
 
 import tailwindcss from '@tailwindcss/vite'
 import sitemap from '@astrojs/sitemap'
+import partytown from '@astrojs/partytown'
 
 // https://astro.build/config
 export default defineConfig({
     site: 'https://entrerozas.pe.aws.gerardmatos.com',
-    integrations: [sitemap()],
+    integrations: [
+        sitemap(),
+        partytown({
+            config: {
+                forward: ['datalayer.push'],
+            },
+        }),
+    ],
     vite: {
         plugins: [tailwindcss()],
         resolve: {
@@ -20,6 +28,7 @@ export default defineConfig({
                     .pathname,
                 '@interfaces': new URL('./src/interfaces', import.meta.url)
                     .pathname,
+                '@data': new URL('./src/data', import.meta.url).pathname,
                 '@stores': new URL('./src/stores', import.meta.url).pathname,
                 '@svg': new URL('./src/svg', import.meta.url).pathname,
                 '@assets': new URL('./src/assets', import.meta.url).pathname,

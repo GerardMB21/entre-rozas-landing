@@ -4,6 +4,7 @@ export interface Flower {
     image: string
     description: string
     price: string
+    originalPrice?: string | null
     width: number
     height: number
 }

@@ -21,7 +21,7 @@ const btnId = 'query-btn'
 </button>
 
 <script>
-    import { API_URL, whatsappPhone } from '@stores/cart'
+    import { whatsappPhone } from '@stores/cart'
 
     const btnId = 'query-btn'
     const btnTracker = document.getElementById(btnId)
@@ -33,28 +33,8 @@ const btnId = 'query-btn'
     )
     const url = `https://wa.me/${whatsappPhone}?text=${message}`
 
-    async function trackEvent(button: string, metadata = {}) {
-        try {
-            await fetch(API_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    button,
-                    page: window.location.pathname,
-                    metadata,
-                }),
-            })
-        } catch (error) {
-            console.log('Tracking error (no crítico):', error)
-        }
-    }
-    async function queryViaWhatsapp() {
+    function queryViaWhatsapp() {
         window.open(url, '_blank', 'noopener')
-
-        await trackEvent(btnId, {
-            message,
-            timestamp: Date.now(),
-        })
     }
 
     btnTracker?.addEventListener('click', queryViaWhatsapp)

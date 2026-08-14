@@ -7,104 +7,28 @@ import Location from '@components/location'
 import Shopping from '@components/shopping'
 import Contact from '@components/contact'
 import { MapPin, Phone, Mail } from '@lucide/astro'
+import type { Flower } from '@interfaces/carousel'
+import products from '@data/products.json'
 
 const phone = '977445864'
 const email = 'contacto@entrerozas.pe'
 
-const flowers = [
-    {
-        id: 1,
-        name: 'Premium Rose Bouquet',
-        image: '/flowers-rose-bouquet.webp',
-        description: 'Luxurious red and pink roses',
-        price: '$89.99',
-        width: 1152,
-        height: 648,
-    },
-    {
-        id: 2,
-        name: 'Sunny Sunflower Mix',
-        image: '/flowers-sunflower.webp',
-        description: 'Bright and cheerful arrangement',
-        price: '$74.99',
-        width: 1152,
-        height: 648,
-    },
-    {
-        id: 3,
-        name: 'Spring Tulips',
-        image: '/flowers-tulips.webp',
-        description: 'Fresh seasonal tulips',
-        price: '$69.99',
-        width: 1152,
-        height: 648,
-    },
-    {
-        id: 4,
-        name: 'Exotic Orchids',
-        image: '/flowers-orchids.webp',
-        description: 'Premium orchid collection',
-        price: '$99.99',
-        width: 1152,
-        height: 648,
-    },
-]
-const moreFlowers = [
-    {
-        id: 5,
-        name: 'Classic Red Roses',
-        image: '/flowers-rose-bouquet.webp',
-        description: 'Timeless dozen red roses',
-        price: '$84.99',
-        width: 1152,
-        height: 648,
-    },
-    {
-        id: 6,
-        name: 'Golden Sunflowers',
-        image: '/flowers-sunflower.webp',
-        description: 'A burst of summer sunshine',
-        price: '$64.99',
-        width: 1152,
-        height: 648,
-    },
-    {
-        id: 7,
-        name: 'Pastel Tulip Bunch',
-        image: '/flowers-tulips.webp',
-        description: 'Soft seasonal tulips',
-        price: '$59.99',
-        width: 1152,
-        height: 648,
-    },
-    {
-        id: 8,
-        name: 'White Orchid Elegance',
-        image: '/flowers-orchids.webp',
-        description: 'Graceful white orchids',
-        price: '$109.99',
-        width: 1152,
-        height: 648,
-    },
-    {
-        id: 9,
-        name: 'Romantic Rose Box',
-        image: '/flowers-rose-bouquet.webp',
-        description: 'Roses in a keepsake box',
-        price: '$94.99',
-        width: 1152,
-        height: 648,
-    },
-    {
-        id: 10,
-        name: 'Mixed Spring Blooms',
-        image: '/flowers-tulips.webp',
-        description: 'A cheerful seasonal mix',
-        price: '$72.99',
-        width: 1152,
-        height: 648,
-    },
-]
+const allFlowers = products as Flower[]
+
+// Selección curada para el carrusel principal: piezas emblemáticas y de mayor valor.
+const carouselIds = [7, 93, 49, 140]
+const flowers = carouselIds
+    .map((id) => allFlowers.find((flower) => flower.id === id))
+    .filter((flower): flower is Flower => Boolean(flower))
+
+// Selección curada para la vitrina "Nuestras Colecciones": opciones populares y accesibles.
+const featuredIds = [1, 61, 70, 4]
+const featuredFlowers = featuredIds
+    .map((id) => allFlowers.find((flower) => flower.id === id))
+    .filter((flower): flower is Flower => Boolean(flower))
+
+// El diálogo "Ver más productos" muestra el catálogo completo descargado de WhatsApp.
+const moreFlowers = allFlowers
 // const testimonials = [
 //     {
 //         name: 'Sarah Johnson',
@@ -193,7 +117,7 @@ const structuredData = {
         set:html={JSON.stringify(structuredData)}
     />
     <Carousel flowers={flowers} />
-    <Featured flowers={flowers} moreFlowers={moreFlowers} />
+    <Featured flowers={featuredFlowers} moreFlowers={moreFlowers} />
     <Location locationInfo={locationInfo} />
     <!-- <Testimonials testimonials={testimonials} /> -->
     <Shopping />
