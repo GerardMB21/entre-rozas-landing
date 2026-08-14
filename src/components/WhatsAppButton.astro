@@ -22,18 +22,20 @@ const btnId = 'query-btn'
 
 <script>
     import { whatsappPhone } from '@stores/cart'
+    import { trackWhatsAppClick } from '@utils/analytics'
 
     const btnId = 'query-btn'
     const btnTracker = document.getElementById(btnId)
     const message = encodeURIComponent(
         'Hola Entre Rozas 🌸, me gustaría hacer una consulta.' +
             `\n\nEsta consulta viene de la web https://entrerozas.pe.aws.gerardmatos.com` +
-            `\nDesarrollada por Gerard Matos, puedes contactarme en el mail: gerardmatos@gerardmatos.com` +
+            `\nDesarrollada por Gerard Matos, puedes contactarme en el mail: contact@gerardmatos.com` +
             `\n¡Gracias!`,
     )
     const url = `https://wa.me/${whatsappPhone}?text=${message}`
 
     function queryViaWhatsapp() {
+        trackWhatsAppClick('floating_button')
         window.open(url, '_blank', 'noopener')
     }
 
