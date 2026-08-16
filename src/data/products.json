@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Sun love",
-    "image": "/products/001-sun-love.jpg",
+    "image": "/products/001-sun-love.webp",
     "description": "Ramo de 24 rosas y un girasol",
     "price": "S/ 89.90",
     "originalPrice": "S/ 120.00",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "name": "Ramo camila(corona y lazo)",
-    "image": "/products/002-ramo-camila-corona-y-lazo.jpg",
+    "image": "/products/002-ramo-camila-corona-y-lazo.webp",
     "description": "PROMOCIÓN | Ramo 24 rosas S/ 150.00 | Ramo 50 rosas S/ 250.00",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "name": "Ramo de Liriums",
-    "image": "/products/003-ramo-de-liriums.jpg",
+    "image": "/products/003-ramo-de-liriums.webp",
     "description": "Ramo de 5 varas de liriums",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "name": "Box classic",
-    "image": "/products/004-box-classic.jpg",
+    "image": "/products/004-box-classic.webp",
     "description": "Box clasico 24 rosas",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "name": "Ramo gerberas",
-    "image": "/products/005-ramo-gerberas.jpg",
+    "image": "/products/005-ramo-gerberas.webp",
     "description": "ramo de 10 gerberas acompañado de 12 rosas blancas",
     "price": "S/ 130.00",
     "originalPrice": "S/ 200.00",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "name": "Ramo de hot wheels",
-    "image": "/products/006-ramo-de-hot-wheels.jpg",
+    "image": "/products/006-ramo-de-hot-wheels.webp",
     "description": "",
     "price": "S/ 35.00",
     "originalPrice": null,
@@ -62,7 +62,7 @@
   {
     "id": 7,
     "name": "Love",
-    "image": "/products/007-love.jpg",
+    "image": "/products/007-love.webp",
     "description": "Ramo de 100 rosas con lazo personalizado y corona",
     "price": "S/ 300.00",
     "originalPrice": "S/ 350.00",
@@ -72,7 +72,7 @@
   {
     "id": 8,
     "name": "Ramo tepha",
-    "image": "/products/008-ramo-tepha.jpg",
+    "image": "/products/008-ramo-tepha.webp",
     "description": "Ramo de rosas | ROSAS INGLESAS | OARQUIDEAS (puede variar color)",
     "price": "S/ 250.00",
     "originalPrice": null,
@@ -82,7 +82,7 @@
   {
     "id": 9,
     "name": "Floral tulipanes",
-    "image": "/products/009-floral-tulipanes.jpg",
+    "image": "/products/009-floral-tulipanes.webp",
     "description": "Box de 10 tulipanes variados y 12 rosas rojas",
     "price": "S/ 220.00",
     "originalPrice": "S/ 280.00",
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "name": "Ramo rustic tulipan bicolor",
-    "image": "/products/010-ramo-rustic-tulipan-bicolor.jpg",
+    "image": "/products/010-ramo-rustic-tulipan-bicolor.webp",
     "description": "10 tulipanes bicolor | Finos verdes",
     "price": "S/ 150.00",
     "originalPrice": "S/ 200.00",
@@ -102,7 +102,7 @@
   {
     "id": 11,
     "name": "Ramo Lili",
-    "image": "/products/011-ramo-lili.jpg",
+    "image": "/products/011-ramo-lili.webp",
     "description": "Ramo de 24 rosas",
     "price": "S/ 100.00",
     "originalPrice": "S/ 200.00",
@@ -112,7 +112,7 @@
   {
     "id": 12,
     "name": "Planta de orquidea",
-    "image": "/products/012-planta-de-orquidea.jpg",
+    "image": "/products/012-planta-de-orquidea.webp",
     "description": "Consultar disponibilidad",
     "price": "S/ 120.00",
     "originalPrice": null,
@@ -122,7 +122,7 @@
   {
     "id": 13,
     "name": "Ramo inglesa",
-    "image": "/products/013-ramo-inglesa.jpg",
+    "image": "/products/013-ramo-inglesa.webp",
     "description": "Ramo de 10 rosas inglesas",
     "price": "S/ 200.00",
     "originalPrice": null,
@@ -132,7 +132,7 @@
   {
     "id": 14,
     "name": "Box mina",
-    "image": "/products/014-box-mina.jpg",
+    "image": "/products/014-box-mina.webp",
     "description": "Box de 10 tulipanes, flores de gerberas",
     "price": "S/ 180.00",
     "originalPrice": "S/ 200.00",
@@ -142,7 +142,7 @@
   {
     "id": 15,
     "name": "Ramón buchon red",
-    "image": "/products/015-ramon-buchon-red.jpg",
+    "image": "/products/015-ramon-buchon-red.webp",
     "description": "50 rosas y verdes",
     "price": "S/ 200.00",
     "originalPrice": null,
@@ -152,7 +152,7 @@
   {
     "id": 16,
     "name": "Ramo Yvanna",
-    "image": "/products/016-ramo-yvanna.jpg",
+    "image": "/products/016-ramo-yvanna.webp",
     "description": "Rosas inglesas exclusivas muy parecidas a las peonias. | Ramo de 20 tallos de rosas inglesas fucsia",
     "price": "S/ 250.00",
     "originalPrice": null,
@@ -162,7 +162,7 @@
   {
     "id": 17,
     "name": "Box sunrise",
-    "image": "/products/017-box-sunrise.jpg",
+    "image": "/products/017-box-sunrise.webp",
     "description": "PROMOCIÓN | 15 girasol | Flores y verdes de estación",
     "price": "S/ 150.00",
     "originalPrice": "S/ 180.00",
@@ -172,7 +172,7 @@
   {
     "id": 18,
     "name": "Ramo Princesa Sol",
-    "image": "/products/018-ramo-princesa-sol.jpg",
+    "image": "/products/018-ramo-princesa-sol.webp",
     "description": "12 GIRASOLES S/ 100.00 | Flores de estación | CORONA",
     "price": "S/ 100.00",
     "originalPrice": null,
@@ -182,7 +182,7 @@
   {
     "id": 19,
     "name": "Arreglo Pink",
-    "image": "/products/019-arreglo-pink.jpg",
+    "image": "/products/019-arreglo-pink.webp",
     "description": "24 rosas acompañado de follajes en una base de florero de cerámico",
     "price": "S/ 150.00",
     "originalPrice": "S/ 180.00",
@@ -192,7 +192,7 @@
   {
     "id": 20,
     "name": "Florero de tulipanes",
-    "image": "/products/020-florero-de-tulipanes.jpg",
+    "image": "/products/020-florero-de-tulipanes.webp",
     "description": "Florero de 10 tulipanes variados en florero de ceramico",
     "price": "S/ 180.00",
     "originalPrice": "S/ 200.00",
@@ -202,7 +202,7 @@
   {
     "id": 21,
     "name": "Ramo Queen",
-    "image": "/products/021-ramo-queen.jpg",
+    "image": "/products/021-ramo-queen.webp",
     "description": "Ramo de 50 rosas",
     "price": "S/ 200.00",
     "originalPrice": "S/ 250.00",
@@ -212,7 +212,7 @@
   {
     "id": 22,
     "name": "Box corazón con chocolate",
-    "image": "/products/022-box-corazon-con-chocolate.jpg",
+    "image": "/products/022-box-corazon-con-chocolate.webp",
     "description": "20 rosas | Chocolate Ferrero Roche | 1 foto enmicada | 1 flor de orquidea",
     "price": "S/ 160.00",
     "originalPrice": null,
@@ -222,7 +222,7 @@
   {
     "id": 23,
     "name": "Ramo bombón",
-    "image": "/products/023-ramo-bombon.jpg",
+    "image": "/products/023-ramo-bombon.webp",
     "description": "20 rosas | Lazo personalizado | 4 chocolates Ferrero roche",
     "price": "S/ 150.00",
     "originalPrice": "S/ 250.00",
@@ -232,7 +232,7 @@
   {
     "id": 24,
     "name": "Ramo jardin L",
-    "image": "/products/024-ramo-jardin-l.jpg",
+    "image": "/products/024-ramo-jardin-l.webp",
     "description": "20 rosas JARDIN CON AROMA + SILVER DOLAR + LIMONIUM | PUEDES ESCOGER EL COLOR DE PAPEL",
     "price": "S/ 130.00",
     "originalPrice": "S/ 150.00",
@@ -242,7 +242,7 @@
   {
     "id": 25,
     "name": "Ramo rustic",
-    "image": "/products/025-ramo-rustic.jpg",
+    "image": "/products/025-ramo-rustic.webp",
     "description": "12 rosas envuelto en tela yute importado",
     "price": "S/ 80.00",
     "originalPrice": "S/ 100.00",
@@ -252,7 +252,7 @@
   {
     "id": 26,
     "name": "Ramo Redpink",
-    "image": "/products/026-ramo-redpink.jpg",
+    "image": "/products/026-ramo-redpink.webp",
     "description": "Ramo de 24 rosas aco.pañado de mini rosas",
     "price": "S/ 180.00",
     "originalPrice": null,
@@ -262,7 +262,7 @@
   {
     "id": 27,
     "name": "Girasoles",
-    "image": "/products/027-girasoles.jpg",
+    "image": "/products/027-girasoles.webp",
     "description": "PROMOCIÒN | 24 girasoles",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -272,7 +272,7 @@
   {
     "id": 28,
     "name": "Ramo de full girasoles",
-    "image": "/products/028-ramo-de-full-girasoles.jpg",
+    "image": "/products/028-ramo-de-full-girasoles.webp",
     "description": "6 girasoles S/60.00 | 12 Girasoles S/ 100",
     "price": "S/ 60.00",
     "originalPrice": null,
@@ -282,7 +282,7 @@
   {
     "id": 29,
     "name": "Box de Rosas Lilas",
-    "image": "/products/029-box-de-rosas-lilas.jpg",
+    "image": "/products/029-box-de-rosas-lilas.webp",
     "description": "24 rosas lilas y flores de estación",
     "price": "S/ 150.00",
     "originalPrice": "S/ 180.00",
@@ -292,7 +292,7 @@
   {
     "id": 30,
     "name": "Box de graduación",
-    "image": "/products/030-box-de-graduacion.jpg",
+    "image": "/products/030-box-de-graduacion.webp",
     "description": "Box de graduación personalizado de 10-12 rosas con toppet",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -302,7 +302,7 @@
   {
     "id": 31,
     "name": "Foto enmicada",
-    "image": "/products/031-foto-enmicada.jpg",
+    "image": "/products/031-foto-enmicada.webp",
     "description": "Personaliza con tu foto favorita",
     "price": "S/ 15.00",
     "originalPrice": null,
@@ -312,7 +312,7 @@
   {
     "id": 32,
     "name": "Ramo Reyna",
-    "image": "/products/032-ramo-reyna.jpg",
+    "image": "/products/032-ramo-reyna.webp",
     "description": "PRECIO PROMOCIÓN | Ramo 24 rosas S/ 130.00 | Ramo 50 rosas S/ 200.00",
     "price": "S/ 130.00",
     "originalPrice": null,
@@ -322,7 +322,7 @@
   {
     "id": 33,
     "name": "Ramo Rosa inglesas Ella",
-    "image": "/products/033-ramo-rosa-inglesas-ella.jpg",
+    "image": "/products/033-ramo-rosa-inglesas-ella.webp",
     "description": "10 Rosas inglesas acompañada de flores de estación",
     "price": "S/ 180.00",
     "originalPrice": null,
@@ -332,7 +332,7 @@
   {
     "id": 34,
     "name": "Canasta Amor eterno",
-    "image": "/products/034-canasta-amor-eterno.jpg",
+    "image": "/products/034-canasta-amor-eterno.webp",
     "description": "Bella canasta con flores eternas | Duración; más de 1 año",
     "price": "S/ 100.00",
     "originalPrice": null,
@@ -342,7 +342,7 @@
   {
     "id": 35,
     "name": "Box graduación personzalizado",
-    "image": "/products/035-box-graduacion-personzalizado.jpg",
+    "image": "/products/035-box-graduacion-personzalizado.webp",
     "description": "12 rosas s/100.00 | 24 rosas s/150.00 | 48 rosas s/180.00",
     "price": "S/ 100.00",
     "originalPrice": null,
@@ -352,7 +352,7 @@
   {
     "id": 36,
     "name": "Ramo Soles",
-    "image": "/products/036-ramo-soles.jpg",
+    "image": "/products/036-ramo-soles.webp",
     "description": "Ramo de 20 girasoles con 24 rosas amarillas acompañadas de baby gypso envuelto en papel importado",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -362,7 +362,7 @@
   {
     "id": 37,
     "name": "Ramo graduación",
-    "image": "/products/037-ramo-graduacion.jpg",
+    "image": "/products/037-ramo-graduacion.webp",
     "description": "",
     "price": "S/ 90.00",
     "originalPrice": "S/ 120.00",
@@ -372,7 +372,7 @@
   {
     "id": 38,
     "name": "Ramo girl",
-    "image": "/products/038-ramo-girl.jpg",
+    "image": "/products/038-ramo-girl.webp",
     "description": "Ramode 5 gerberas con un tulipan",
     "price": "S/ 50.00",
     "originalPrice": null,
@@ -382,7 +382,7 @@
   {
     "id": 39,
     "name": "Ramo Sol",
-    "image": "/products/039-ramo-sol.jpg",
+    "image": "/products/039-ramo-sol.webp",
     "description": "06 girasoles S/ 70.00 | 12 girasoles S/ 120.00 | Flores de estación",
     "price": "S/ 70.00",
     "originalPrice": null,
@@ -392,7 +392,7 @@
   {
     "id": 40,
     "name": "Ramo de tulipanes ROJOS",
-    "image": "/products/040-ramo-de-tulipanes-rojos.jpg",
+    "image": "/products/040-ramo-de-tulipanes-rojos.webp",
     "description": "10 tulipanes | Papel coreano",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -402,7 +402,7 @@
   {
     "id": 41,
     "name": "Box Ana",
-    "image": "/products/041-box-ana.jpg",
+    "image": "/products/041-box-ana.webp",
     "description": "Box de 50 rosas",
     "price": "S/ 180.00",
     "originalPrice": "S/ 200.00",
@@ -412,7 +412,7 @@
   {
     "id": 42,
     "name": "Box graduación",
-    "image": "/products/042-box-graduacion.jpg",
+    "image": "/products/042-box-graduacion.webp",
     "description": "12 girasoles vivero + oso  + tarjeta impresa",
     "price": "S/ 145.00",
     "originalPrice": null,
@@ -422,7 +422,7 @@
   {
     "id": 43,
     "name": "Ramo Gema y Lazo personalizado",
-    "image": "/products/043-ramo-gema-y-lazo-personalizado.jpg",
+    "image": "/products/043-ramo-gema-y-lazo-personalizado.webp",
     "description": "PRECIO PROMOCIÓN | Ramo 24 rosas S/ 100.00 | Ramo 50 rosas S/ 180.00 | Ramo 80 rosas S/ 250.00 | Ramo 100 r Leer más",
     "price": "S/ 100.00",
     "originalPrice": null,
@@ -432,7 +432,7 @@
   {
     "id": 44,
     "name": "Ramo sol",
-    "image": "/products/044-ramo-sol.jpg",
+    "image": "/products/044-ramo-sol.webp",
     "description": "Ramo de 12 girasoles",
     "price": "S/ 99.00",
     "originalPrice": "S/ 150.00",
@@ -442,7 +442,7 @@
   {
     "id": 45,
     "name": "Ramo Bella",
-    "image": "/products/045-ramo-bella.jpg",
+    "image": "/products/045-ramo-bella.webp",
     "description": "20 rosas (rosada y lila) | Claveles importados | Flores de estación",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -452,7 +452,7 @@
   {
     "id": 46,
     "name": "Ramo rustic AMARILLO",
-    "image": "/products/046-ramo-rustic-amarillo.jpg",
+    "image": "/products/046-ramo-rustic-amarillo.webp",
     "description": "Ramo de 5 tulipanes",
     "price": "S/ 99.90",
     "originalPrice": null,
@@ -462,7 +462,7 @@
   {
     "id": 47,
     "name": "Box graduación",
-    "image": "/products/047-box-graduacion.jpg",
+    "image": "/products/047-box-graduacion.webp",
     "description": "Box de 50 rosas Fucsia/rosada",
     "price": "S/ 180.00",
     "originalPrice": "S/ 200.00",
@@ -472,7 +472,7 @@
   {
     "id": 48,
     "name": "Box love",
-    "image": "/products/048-box-love.jpg",
+    "image": "/products/048-box-love.webp",
     "description": "12 rosas y 6 girasoles",
     "price": "S/ 120.00",
     "originalPrice": null,
@@ -482,7 +482,7 @@
   {
     "id": 49,
     "name": "Ramo Buchon 50 tulipanes",
-    "image": "/products/049-ramo-buchon-50-tulipanes.jpg",
+    "image": "/products/049-ramo-buchon-50-tulipanes.webp",
     "description": "50 tulipanes | Verdes de estación | Papel impermeable",
     "price": "S/ 600.00",
     "originalPrice": "S/ 700.00",
@@ -492,7 +492,7 @@
   {
     "id": 50,
     "name": "Ramo buchon Madie",
-    "image": "/products/050-ramo-buchon-madie.jpg",
+    "image": "/products/050-ramo-buchon-madie.webp",
     "description": "Ramo de 50 rosas acompañado de 10 tulipanes rosados",
     "price": "S/ 350.00",
     "originalPrice": "S/ 450.00",
@@ -502,7 +502,7 @@
   {
     "id": 51,
     "name": "Ramo blue",
-    "image": "/products/051-ramo-blue.jpg",
+    "image": "/products/051-ramo-blue.webp",
     "description": "20 rosas | Glorws y verdes de estación",
     "price": "S/ 60.00",
     "originalPrice": "S/ 100.00",
@@ -512,7 +512,7 @@
   {
     "id": 52,
     "name": "Ramo de felicitaciones",
-    "image": "/products/052-ramo-de-felicitaciones.jpg",
+    "image": "/products/052-ramo-de-felicitaciones.webp",
     "description": "Ramo de 30 rosas rojas acompañado de gypsophilia lazo personalizado",
     "price": "S/ 150.00",
     "originalPrice": "S/ 220.00",
@@ -522,7 +522,7 @@
   {
     "id": 53,
     "name": "Ramo latido",
-    "image": "/products/053-ramo-latido.jpg",
+    "image": "/products/053-ramo-latido.webp",
     "description": "Promoción | 20 rosas | Margarita boton verde | Papel coreano",
     "price": "S/ 120.00",
     "originalPrice": null,
@@ -532,7 +532,7 @@
   {
     "id": 54,
     "name": "Pack fotos y girasoles",
-    "image": "/products/054-pack-fotos-y-girasoles.jpg",
+    "image": "/products/054-pack-fotos-y-girasoles.webp",
     "description": "06 girasoles S/ 80.00 | 12 girasol S/110.00 | Flores re estación | 2 fotos enmicadas",
     "price": "S/ 90.00",
     "originalPrice": null,
@@ -542,7 +542,7 @@
   {
     "id": 55,
     "name": "Love",
-    "image": "/products/055-love.jpg",
+    "image": "/products/055-love.webp",
     "description": "Ramo de 50 rosas rojas acompañado de gypsophilia",
     "price": "S/ 150.00",
     "originalPrice": "S/ 250.00",
@@ -552,7 +552,7 @@
   {
     "id": 56,
     "name": "SunFlowers queen",
-    "image": "/products/056-sunflowers-queen.jpg",
+    "image": "/products/056-sunflowers-queen.webp",
     "description": "Ramo de 24 girasoles s/150.00 | Ramo de 12 girasoles s/120.00",
     "price": "S/ 150.00",
     "originalPrice": "S/ 250.00",
@@ -562,7 +562,7 @@
   {
     "id": 57,
     "name": "Ramo rosas y verdes",
-    "image": "/products/057-ramo-rosas-y-verdes.jpg",
+    "image": "/products/057-ramo-rosas-y-verdes.webp",
     "description": "12 rosas y verdes S/ 130.00 | 24 rosas y verdes S/ 200.00",
     "price": "S/ 130.00",
     "originalPrice": null,
@@ -572,7 +572,7 @@
   {
     "id": 58,
     "name": "Globo corazón",
-    "image": "/products/058-globo-corazon.jpg",
+    "image": "/products/058-globo-corazon.webp",
     "description": "Globo corazón rojo",
     "price": "S/ 10.00",
     "originalPrice": null,
@@ -582,7 +582,7 @@
   {
     "id": 59,
     "name": "Florero Ramo",
-    "image": "/products/059-florero-ramo.jpg",
+    "image": "/products/059-florero-ramo.webp",
     "description": "10 tallos de rosas inglesas | Verdes de estación | Florero cerámica",
     "price": "S/ 220.00",
     "originalPrice": "S/ 250.00",
@@ -592,7 +592,7 @@
   {
     "id": 60,
     "name": "Ramo Anny",
-    "image": "/products/060-ramo-anny.jpg",
+    "image": "/products/060-ramo-anny.webp",
     "description": "Ramo de 50 rosas y 8 girasoles acompañado de follaje fino",
     "price": "S/ 200.00",
     "originalPrice": "S/ 350.00",
@@ -602,7 +602,7 @@
   {
     "id": 61,
     "name": "Ramo Dulce amor",
-    "image": "/products/061-ramo-dulce-amor.jpg",
+    "image": "/products/061-ramo-dulce-amor.webp",
     "description": "Ramo de 24 rosas acompañado de gypsophilia corona y lazo personalizado",
     "price": "S/ 100.00",
     "originalPrice": "S/ 180.00",
@@ -612,7 +612,7 @@
   {
     "id": 62,
     "name": "Box de tulipanes fucsias",
-    "image": "/products/062-box-de-tulipanes-fucsias.jpg",
+    "image": "/products/062-box-de-tulipanes-fucsias.webp",
     "description": "Box de 10 tulipanes fucsia",
     "price": "S/ 180.00",
     "originalPrice": "S/ 250.00",
@@ -622,7 +622,7 @@
   {
     "id": 63,
     "name": "Ramo princess",
-    "image": "/products/063-ramo-princess.jpg",
+    "image": "/products/063-ramo-princess.webp",
     "description": "Ramo de 24 girasoles con corona y cinta personalizadoa",
     "price": "S/ 180.00",
     "originalPrice": "S/ 300.00",
@@ -632,7 +632,7 @@
   {
     "id": 64,
     "name": "Korean flowers",
-    "image": "/products/064-korean-flowers.jpg",
+    "image": "/products/064-korean-flowers.webp",
     "description": "Ramo de 12 rosas rojas",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -642,7 +642,7 @@
   {
     "id": 65,
     "name": "Ramo hermosa",
-    "image": "/products/065-ramo-hermosa.jpg",
+    "image": "/products/065-ramo-hermosa.webp",
     "description": "Ramo de 50 rosas con lazo personalizado",
     "price": "S/ 180.00",
     "originalPrice": "S/ 250.00",
@@ -652,7 +652,7 @@
   {
     "id": 66,
     "name": "Ramo Redpink",
-    "image": "/products/066-ramo-redpink.jpg",
+    "image": "/products/066-ramo-redpink.webp",
     "description": "Ramo de 24 rosas",
     "price": "S/ 130.00",
     "originalPrice": "S/ 180.00",
@@ -662,7 +662,7 @@
   {
     "id": 67,
     "name": "Ramo vino",
-    "image": "/products/067-ramo-vino.jpg",
+    "image": "/products/067-ramo-vino.webp",
     "description": "Ramo de 20 rosas",
     "price": "S/ 99.00",
     "originalPrice": "S/ 160.00",
@@ -672,7 +672,7 @@
   {
     "id": 68,
     "name": "Ramo blue",
-    "image": "/products/068-ramo-blue.jpg",
+    "image": "/products/068-ramo-blue.webp",
     "description": "24 rosas azules",
     "price": "S/ 80.00",
     "originalPrice": "S/ 120.00",
@@ -682,7 +682,7 @@
   {
     "id": 69,
     "name": "Box de rosas wanda",
-    "image": "/products/069-box-de-rosas-wanda.jpg",
+    "image": "/products/069-box-de-rosas-wanda.webp",
     "description": "24 rosas y follajes finos",
     "price": "S/ 99.00",
     "originalPrice": "S/ 120.00",
@@ -692,7 +692,7 @@
   {
     "id": 70,
     "name": "Ramo pink",
-    "image": "/products/070-ramo-pink.jpg",
+    "image": "/products/070-ramo-pink.webp",
     "description": "20 rosas | Verdes de estación",
     "price": "S/ 80.00",
     "originalPrice": "S/ 120.00",
@@ -702,7 +702,7 @@
   {
     "id": 71,
     "name": "Box tulip pink",
-    "image": "/products/071-box-tulip-pink.jpg",
+    "image": "/products/071-box-tulip-pink.webp",
     "description": "Box de 5 tulipanes rosados acompañado de hortencias",
     "price": "S/ 180.00",
     "originalPrice": "S/ 250.00",
@@ -712,7 +712,7 @@
   {
     "id": 72,
     "name": "Luxury",
-    "image": "/products/072-luxury.jpg",
+    "image": "/products/072-luxury.webp",
     "description": "",
     "price": "S/ 80.00",
     "originalPrice": "S/ 150.00",
@@ -722,7 +722,7 @@
   {
     "id": 73,
     "name": "Bonita",
-    "image": "/products/073-bonita.jpg",
+    "image": "/products/073-bonita.webp",
     "description": "Ramo de 24 rosas lilas acompañado de Astromelia",
     "price": "S/ 120.00",
     "originalPrice": "S/ 180.00",
@@ -732,7 +732,7 @@
   {
     "id": 74,
     "name": "RAMO AMOR ETERNO",
-    "image": "/products/074-ramo-amor-eterno.jpg",
+    "image": "/products/074-ramo-amor-eterno.webp",
     "description": "Ramo de flores eternas | Duración de más de 1 año",
     "price": "S/ 120.00",
     "originalPrice": null,
@@ -742,7 +742,7 @@
   {
     "id": 75,
     "name": "Box tulipanes mix",
-    "image": "/products/075-box-tulipanes-mix.jpg",
+    "image": "/products/075-box-tulipanes-mix.webp",
     "description": "Box de 10 tulipanes variados",
     "price": "S/ 250.00",
     "originalPrice": "S/ 300.00",
@@ -752,7 +752,7 @@
   {
     "id": 76,
     "name": "Ramo mandala",
-    "image": "/products/076-ramo-mandala.jpg",
+    "image": "/products/076-ramo-mandala.webp",
     "description": "Ramo de 24 rosas mándala acompañado de gypsophilia y diamantes( color de papel puede variar)",
     "price": "S/ 99.90",
     "originalPrice": "S/ 150.00",
@@ -762,7 +762,7 @@
   {
     "id": 77,
     "name": "Ramo chocolove",
-    "image": "/products/077-ramo-chocolove.jpg",
+    "image": "/products/077-ramo-chocolove.webp",
     "description": "24 rosas acompañado de 4 chocolates Ferrero",
     "price": "S/ 150.00",
     "originalPrice": "S/ 200.00",
@@ -772,7 +772,7 @@
   {
     "id": 78,
     "name": "Pack de ramo de rosas + globos",
-    "image": "/products/078-pack-de-ramo-de-rosas-globos.jpg",
+    "image": "/products/078-pack-de-ramo-de-rosas-globos.webp",
     "description": "Ramo de 50 rosas + 10 globos",
     "price": "S/ 380.00",
     "originalPrice": null,
@@ -782,7 +782,7 @@
   {
     "id": 79,
     "name": "Ramo de corazon",
-    "image": "/products/079-ramo-de-corazon.jpg",
+    "image": "/products/079-ramo-de-corazon.webp",
     "description": "Ramo de 100 rosas rojas en forma de corazon",
     "price": "S/ 300.00",
     "originalPrice": "S/ 500.00",
@@ -792,7 +792,7 @@
   {
     "id": 80,
     "name": "Ramo Lili",
-    "image": "/products/080-ramo-lili.jpg",
+    "image": "/products/080-ramo-lili.webp",
     "description": "20 rosas fucsias | Verde de estación",
     "price": "S/ 100.00",
     "originalPrice": "S/ 120.00",
@@ -802,7 +802,7 @@
   {
     "id": 81,
     "name": "Box Lia",
-    "image": "/products/081-box-lia.jpg",
+    "image": "/products/081-box-lia.webp",
     "description": "Mix de flores tulipanes liliums rosas hortencias",
     "price": "S/ 280.00",
     "originalPrice": null,
@@ -812,7 +812,7 @@
   {
     "id": 82,
     "name": "Box rosas Amelia",
-    "image": "/products/082-box-rosas-amelia.jpg",
+    "image": "/products/082-box-rosas-amelia.webp",
     "description": "50 rosas amarillas",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -822,7 +822,7 @@
   {
     "id": 83,
     "name": "Ramo Rosalia",
-    "image": "/products/083-ramo-rosalia.jpg",
+    "image": "/products/083-ramo-rosalia.webp",
     "description": "Ramo exclusivo de 50 rosas y lisianthus rosado",
     "price": "S/ 250.00",
     "originalPrice": "S/ 300.00",
@@ -832,7 +832,7 @@
   {
     "id": 84,
     "name": "Ramo sunflower",
-    "image": "/products/084-ramo-sunflower.jpg",
+    "image": "/products/084-ramo-sunflower.webp",
     "description": "12 girasoles S/ 100.00 | Flores de estación",
     "price": "S/ 100.00",
     "originalPrice": "S/ 150.00",
@@ -842,7 +842,7 @@
   {
     "id": 85,
     "name": "Pack de 5 globo con elio",
-    "image": "/products/085-pack-de-5-globo-con-elio.jpg",
+    "image": "/products/085-pack-de-5-globo-con-elio.webp",
     "description": "",
     "price": "S/ 60.00",
     "originalPrice": null,
@@ -852,7 +852,7 @@
   {
     "id": 86,
     "name": "Ramo chocolate",
-    "image": "/products/086-ramo-chocolate.jpg",
+    "image": "/products/086-ramo-chocolate.webp",
     "description": "12 chocolates Ferrero rocher acompañado de un girasol y gipsophilia",
     "price": "S/ 130.00",
     "originalPrice": "S/ 150.00",
@@ -862,7 +862,7 @@
   {
     "id": 87,
     "name": "Ramo tulipanes",
-    "image": "/products/087-ramo-tulipanes.jpg",
+    "image": "/products/087-ramo-tulipanes.webp",
     "description": "10 unidades",
     "price": "S/ 150.00",
     "originalPrice": "S/ 180.00",
@@ -872,7 +872,7 @@
   {
     "id": 88,
     "name": "Ramo Astromelia",
-    "image": "/products/088-ramo-astromelia.jpg",
+    "image": "/products/088-ramo-astromelia.webp",
     "description": "",
     "price": "S/ 50.00",
     "originalPrice": null,
@@ -882,7 +882,7 @@
   {
     "id": 89,
     "name": "Ramo 24 promoción",
-    "image": "/products/089-ramo-24-promocion.jpg",
+    "image": "/products/089-ramo-24-promocion.webp",
     "description": "Ramo 24 rosas (1 solo color de rosas ) | Papal coreano",
     "price": "S/ 85.00",
     "originalPrice": "S/ 150.00",
@@ -892,7 +892,7 @@
   {
     "id": 90,
     "name": "Tulipan naranja",
-    "image": "/products/090-tulipan-naranja.jpg",
+    "image": "/products/090-tulipan-naranja.webp",
     "description": "",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -902,7 +902,7 @@
   {
     "id": 91,
     "name": "Ramo rosas y flor baby",
-    "image": "/products/091-ramo-rosas-y-flor-baby.jpg",
+    "image": "/products/091-ramo-rosas-y-flor-baby.webp",
     "description": "PROMOCIÓN | 24rosas | Flor baby | Papel decorativo",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -912,7 +912,7 @@
   {
     "id": 92,
     "name": "Ramo dulce",
-    "image": "/products/092-ramo-dulce.jpg",
+    "image": "/products/092-ramo-dulce.webp",
     "description": "PROMOCIÓN | Ramo de 12 rosas acompañado de gypsophilia",
     "price": "S/ 60.00",
     "originalPrice": "S/ 120.00",
@@ -922,7 +922,7 @@
   {
     "id": 93,
     "name": "Arreglo Aitanna",
-    "image": "/products/093-arreglo-aitanna.jpg",
+    "image": "/products/093-arreglo-aitanna.webp",
     "description": "Arreglo aitanna de 100 rosas",
     "price": "S/ 350.00",
     "originalPrice": "S/ 400.00",
@@ -932,7 +932,7 @@
   {
     "id": 94,
     "name": "Ramo 6 girasoles",
-    "image": "/products/094-ramo-6-girasoles.jpg",
+    "image": "/products/094-ramo-6-girasoles.webp",
     "description": "6 girasoles S/60.00 | 12 girasoles S/ 90.00 | Verdes de estación",
     "price": "S/ 60.00",
     "originalPrice": null,
@@ -942,7 +942,7 @@
   {
     "id": 95,
     "name": "Ramo purple",
-    "image": "/products/095-ramo-purple.jpg",
+    "image": "/products/095-ramo-purple.webp",
     "description": "",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -952,7 +952,7 @@
   {
     "id": 96,
     "name": "Ramo Mix tulip",
-    "image": "/products/096-ramo-mix-tulip.jpg",
+    "image": "/products/096-ramo-mix-tulip.webp",
     "description": "10 tulipanes mix | Decorado con papel coreano",
     "price": "S/ 150.00",
     "originalPrice": "S/ 250.00",
@@ -962,7 +962,7 @@
   {
     "id": 97,
     "name": "Basic box",
-    "image": "/products/097-basic-box.jpg",
+    "image": "/products/097-basic-box.webp",
     "description": "Box de 12 rosas rojas",
     "price": "S/ 80.00",
     "originalPrice": "S/ 120.00",
@@ -972,7 +972,7 @@
   {
     "id": 98,
     "name": "Clavel",
-    "image": "/products/098-clavel.jpg",
+    "image": "/products/098-clavel.webp",
     "description": "Ramo de claveles importados",
     "price": "S/ 80.00",
     "originalPrice": "S/ 120.00",
@@ -982,7 +982,7 @@
   {
     "id": 99,
     "name": "Ramo Buchon 48 rosas",
-    "image": "/products/099-ramo-buchon-48-rosas.jpg",
+    "image": "/products/099-ramo-buchon-48-rosas.webp",
     "description": "",
     "price": "S/ 180.00",
     "originalPrice": "S/ 200.00",
@@ -992,7 +992,7 @@
   {
     "id": 100,
     "name": "Peluche graduación",
-    "image": "/products/102-peluche-graduacion.jpg",
+    "image": "/products/102-peluche-graduacion.webp",
     "description": "",
     "price": "S/ 25.00",
     "originalPrice": null,
@@ -1002,7 +1002,7 @@
   {
     "id": 101,
     "name": "Yellow pink",
-    "image": "/products/104-yellow-pink.jpg",
+    "image": "/products/104-yellow-pink.webp",
     "description": "PROMOCIÓN | Ramo de 24 girasoles con claveles grandes de vivero acompañado de gypsophilia",
     "price": "S/ 180.00",
     "originalPrice": null,
@@ -1012,7 +1012,7 @@
   {
     "id": 102,
     "name": "Ramo loverose",
-    "image": "/products/105-ramo-loverose.jpg",
+    "image": "/products/105-ramo-loverose.webp",
     "description": "PROMOCIÓN | Ramo de 30 rosas",
     "price": "S/ 120.00",
     "originalPrice": "S/ 180.00",
@@ -1022,7 +1022,7 @@
   {
     "id": 103,
     "name": "Ramo señorita",
-    "image": "/products/106-ramo-senorita.jpg",
+    "image": "/products/106-ramo-senorita.webp",
     "description": "Ramo de 24 rosas S/ 120.00 | Ramo de 50 rosas s/170.00",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -1032,7 +1032,7 @@
   {
     "id": 104,
     "name": "Ramo greyci",
-    "image": "/products/107-ramo-greyci.jpg",
+    "image": "/products/107-ramo-greyci.webp",
     "description": "",
     "price": "S/ 280.00",
     "originalPrice": null,
@@ -1042,7 +1042,7 @@
   {
     "id": 105,
     "name": "Ramo amelia",
-    "image": "/products/108-ramo-amelia.jpg",
+    "image": "/products/108-ramo-amelia.webp",
     "description": "Promoción | 48 rosas bicolor",
     "price": "S/ 200.00",
     "originalPrice": "S/ 250.00",
@@ -1052,7 +1052,7 @@
   {
     "id": 106,
     "name": "Box love",
-    "image": "/products/109-box-love.jpg",
+    "image": "/products/109-box-love.webp",
     "description": "Ramo de 12 rosas acompañado de lilium y un peluche importado",
     "price": "S/ 120.00",
     "originalPrice": "S/ 200.00",
@@ -1062,7 +1062,7 @@
   {
     "id": 107,
     "name": "Ramo Felicidades",
-    "image": "/products/110-ramo-felicidades.jpg",
+    "image": "/products/110-ramo-felicidades.webp",
     "description": "",
     "price": "S/ 150.00",
     "originalPrice": "S/ 180.00",
@@ -1072,7 +1072,7 @@
   {
     "id": 108,
     "name": "Pack ramo + globos",
-    "image": "/products/111-pack-ramo-globos.jpg",
+    "image": "/products/111-pack-ramo-globos.webp",
     "description": "Ramo de 6 girasoles y 10 globos",
     "price": "S/ 200.00",
     "originalPrice": null,
@@ -1082,7 +1082,7 @@
   {
     "id": 109,
     "name": "Ramo Thais",
-    "image": "/products/112-ramo-thais.jpg",
+    "image": "/products/112-ramo-thais.webp",
     "description": "20 tulipanes",
     "price": "S/ 220.00",
     "originalPrice": "S/ 240.00",
@@ -1092,7 +1092,7 @@
   {
     "id": 110,
     "name": "Ramo love",
-    "image": "/products/113-ramo-love.jpg",
+    "image": "/products/113-ramo-love.webp",
     "description": "Ramo de 24 rosas",
     "price": "S/ 99.00",
     "originalPrice": "S/ 150.00",
@@ -1102,7 +1102,7 @@
   {
     "id": 111,
     "name": "Ramo love sun",
-    "image": "/products/114-ramo-love-sun.jpg",
+    "image": "/products/114-ramo-love-sun.webp",
     "description": "Promoción | 24 rosas | 12 girasoles",
     "price": "S/ 120.00",
     "originalPrice": null,
@@ -1112,7 +1112,7 @@
   {
     "id": 112,
     "name": "Ramo morgana",
-    "image": "/products/115-ramo-morgana.jpg",
+    "image": "/products/115-ramo-morgana.webp",
     "description": "Ramo de 20 rosas inglesas",
     "price": "S/ 250.00",
     "originalPrice": "S/ 350.00",
@@ -1122,7 +1122,7 @@
   {
     "id": 113,
     "name": "Graduation sunflower",
-    "image": "/products/116-graduation-sunflower.jpg",
+    "image": "/products/116-graduation-sunflower.webp",
     "description": "Ramo de 24 girasoles",
     "price": "S/ 150.00",
     "originalPrice": "S/ 250.00",
@@ -1132,7 +1132,7 @@
   {
     "id": 114,
     "name": "Cintas personalizadas",
-    "image": "/products/117-cintas-personalizadas.jpg",
+    "image": "/products/117-cintas-personalizadas.webp",
     "description": "Cintas personalizadas para ramos",
     "price": "S/ 10.00",
     "originalPrice": null,
@@ -1142,7 +1142,7 @@
   {
     "id": 115,
     "name": "Ramo baby yellow",
-    "image": "/products/118-ramo-baby-yellow.jpg",
+    "image": "/products/118-ramo-baby-yellow.webp",
     "description": "Ramo 05 tulipanes S/120.00 | Ramo de 10 tulipanes 200.00",
     "price": "S/ 120.00",
     "originalPrice": null,
@@ -1152,7 +1152,7 @@
   {
     "id": 116,
     "name": "Florero de tulipanes mix",
-    "image": "/products/119-florero-de-tulipanes-mix.jpg",
+    "image": "/products/119-florero-de-tulipanes-mix.webp",
     "description": "10 tulipanes colores | Florero cerámica",
     "price": "S/ 180.00",
     "originalPrice": "S/ 200.00",
@@ -1162,7 +1162,7 @@
   {
     "id": 117,
     "name": "Ramo rosas inglesas Fucsia",
-    "image": "/products/120-ramo-rosas-inglesas-fucsia.jpg",
+    "image": "/products/120-ramo-rosas-inglesas-fucsia.webp",
     "description": "10 tallos de rosas inglesas | Verdes de estación | Decorado con papel coreano",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -1172,7 +1172,7 @@
   {
     "id": 118,
     "name": "Ramo graduación señorita",
-    "image": "/products/121-ramo-graduacion-senorita.jpg",
+    "image": "/products/121-ramo-graduacion-senorita.webp",
     "description": "24 Rosas S/ 120.00 | 50 Rosas S/ 150.00 | 100 Rosas S/ 280.00",
     "price": "S/ 120.00",
     "originalPrice": null,
@@ -1182,7 +1182,7 @@
   {
     "id": 119,
     "name": "Ramo melanie",
-    "image": "/products/122-ramo-melanie.jpg",
+    "image": "/products/122-ramo-melanie.webp",
     "description": "",
     "price": "Consultar precio",
     "originalPrice": null,
@@ -1192,7 +1192,7 @@
   {
     "id": 120,
     "name": "ROSA INGLESA",
-    "image": "/products/123-rosa-inglesa.jpg",
+    "image": "/products/123-rosa-inglesa.webp",
     "description": "Ramo 10 tallos de rosas inglesas | ( en cada tallo contiene un aproximado de 1a 4 botones)",
     "price": "S/ 200.00",
     "originalPrice": "S/ 250.00",
@@ -1202,7 +1202,7 @@
   {
     "id": 121,
     "name": "Ramo sun",
-    "image": "/products/124-ramo-sun.jpg",
+    "image": "/products/124-ramo-sun.webp",
     "description": "3 girasoles | Mini Margaritas",
     "price": "S/ 50.00",
     "originalPrice": "S/ 80.00",
@@ -1212,7 +1212,7 @@
   {
     "id": 122,
     "name": "Ramo de tulipanes azul",
-    "image": "/products/125-ramo-de-tulipanes-azul.jpg",
+    "image": "/products/125-ramo-de-tulipanes-azul.webp",
     "description": "Ramo de 10 tulipanes azules",
     "price": "S/ 200.00",
     "originalPrice": "S/ 250.00",
@@ -1222,7 +1222,7 @@
   {
     "id": 123,
     "name": "Florero de gerberas de colores",
-    "image": "/products/126-florero-de-gerberas-de-colores.jpg",
+    "image": "/products/126-florero-de-gerberas-de-colores.webp",
     "description": "12 unidades de Gerberas en florero(florero puede variar)",
     "price": "S/ 120.00",
     "originalPrice": "S/ 180.00",
@@ -1232,7 +1232,7 @@
   {
     "id": 124,
     "name": "Ramo pink graduación",
-    "image": "/products/127-ramo-pink-graduacion.jpg",
+    "image": "/products/127-ramo-pink-graduacion.webp",
     "description": "50 rosas",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -1242,7 +1242,7 @@
   {
     "id": 125,
     "name": "Tulipanes en Florero",
-    "image": "/products/128-tulipanes-en-florero.jpg",
+    "image": "/products/128-tulipanes-en-florero.webp",
     "description": "10 tulipanes | Verdes de estación | Florero cerámica",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -1252,7 +1252,7 @@
   {
     "id": 126,
     "name": "Ramo Romina",
-    "image": "/products/129-ramo-romina.jpg",
+    "image": "/products/129-ramo-romina.webp",
     "description": "Ramo de rosas de jardin y rosas lilas",
     "price": "S/ 180.00",
     "originalPrice": "S/ 200.00",
@@ -1262,7 +1262,7 @@
   {
     "id": 127,
     "name": "Ramo margaritas mini girasoles",
-    "image": "/products/130-ramo-margaritas-mini-girasoles.jpg",
+    "image": "/products/130-ramo-margaritas-mini-girasoles.webp",
     "description": "Pocas unidades",
     "price": "S/ 99.90",
     "originalPrice": null,
@@ -1272,7 +1272,7 @@
   {
     "id": 128,
     "name": "Ramo Hello Kitty",
-    "image": "/products/131-ramo-hello-kitty.jpg",
+    "image": "/products/131-ramo-hello-kitty.webp",
     "description": "Ramo de 24 rosas",
     "price": "S/ 150.00",
     "originalPrice": "S/ 220.00",
@@ -1282,7 +1282,7 @@
   {
     "id": 129,
     "name": "Ramo violeta",
-    "image": "/products/132-ramo-violeta.jpg",
+    "image": "/products/132-ramo-violeta.webp",
     "description": "Bello ramo de 24 rosas claveles spray y follajes finos",
     "price": "S/ 140.00",
     "originalPrice": null,
@@ -1292,7 +1292,7 @@
   {
     "id": 130,
     "name": "Ramo dora",
-    "image": "/products/133-ramo-dora.jpg",
+    "image": "/products/133-ramo-dora.webp",
     "description": "12 girasoles y claveles S/ 110.00",
     "price": "S/ 110.00",
     "originalPrice": null,
@@ -1302,7 +1302,7 @@
   {
     "id": 131,
     "name": "Ramo 10 tulipanes BLANCO",
-    "image": "/products/134-ramo-10-tulipanes-blanco.jpg",
+    "image": "/products/134-ramo-10-tulipanes-blanco.webp",
     "description": "Ramo de 10 tulipanes blancos envuelto en papel importado",
     "price": "S/ 150.00",
     "originalPrice": null,
@@ -1312,7 +1312,7 @@
   {
     "id": 132,
     "name": "Ramo Romántic",
-    "image": "/products/135-ramo-romantic.jpg",
+    "image": "/products/135-ramo-romantic.webp",
     "description": "10 tulipanes anaranjado | Flores de estación | Papel impermeable",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -1322,7 +1322,7 @@
   {
     "id": 133,
     "name": "Purple",
-    "image": "/products/136-purple.jpg",
+    "image": "/products/136-purple.webp",
     "description": "Ramo de 50 rosas lilas y rosadas",
     "price": "S/ 180.00",
     "originalPrice": "S/ 250.00",
@@ -1332,7 +1332,7 @@
   {
     "id": 134,
     "name": "Ramo buchon",
-    "image": "/products/137-ramo-buchon.jpg",
+    "image": "/products/137-ramo-buchon.webp",
     "description": "Ramo de 50 rosas",
     "price": "S/ 150.00",
     "originalPrice": "S/ 250.00",
@@ -1342,7 +1342,7 @@
   {
     "id": 135,
     "name": "Mundial pink",
-    "image": "/products/138-mundial-pink.jpg",
+    "image": "/products/138-mundial-pink.webp",
     "description": "Ramo de 30 rosas",
     "price": "S/ 180.00",
     "originalPrice": "S/ 200.00",
@@ -1352,7 +1352,7 @@
   {
     "id": 136,
     "name": "Pink rose",
-    "image": "/products/139-pink-rose.jpg",
+    "image": "/products/139-pink-rose.webp",
     "description": "Ramo de mini rosas y claveles importados acompañado de follajes",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -1362,7 +1362,7 @@
   {
     "id": 137,
     "name": "Ramo Fusión",
-    "image": "/products/140-ramo-fusion.jpg",
+    "image": "/products/140-ramo-fusion.webp",
     "description": "Ramo de 24 rosas acompañado de gypsophilia q",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -1372,7 +1372,7 @@
   {
     "id": 138,
     "name": "RAMO GERBERAS",
-    "image": "/products/141-ramo-gerberas.jpg",
+    "image": "/products/141-ramo-gerberas.webp",
     "description": "Ramo de 10 gerberas con 3 tulipanes rosados acompañado de wax y margaritas",
     "price": "S/ 150.00",
     "originalPrice": "S/ 180.00",
@@ -1382,7 +1382,7 @@
   {
     "id": 139,
     "name": "Ramo pink graduación",
-    "image": "/products/142-ramo-pink-graduacion.jpg",
+    "image": "/products/142-ramo-pink-graduacion.webp",
     "description": "20 rosas | Flor baby | Birrete | Delicada envoltura",
     "price": "S/ 100.00",
     "originalPrice": "S/ 150.00",
@@ -1392,7 +1392,7 @@
   {
     "id": 140,
     "name": "BOX LILA",
-    "image": "/products/144-box-lila.jpg",
+    "image": "/products/144-box-lila.webp",
     "description": "Box de 100 rosas lilas acompañado de follajes y flores de estación",
     "price": "S/ 250.00",
     "originalPrice": "S/ 300.00",
@@ -1402,7 +1402,7 @@
   {
     "id": 141,
     "name": "Ramo 24 Rosas",
-    "image": "/products/145-ramo-24-rosas.jpg",
+    "image": "/products/145-ramo-24-rosas.webp",
     "description": "Promoción | Ramo 24 rosas ( 1 solo color de rosas) | Papel decorativo",
     "price": "S/ 60.00",
     "originalPrice": "S/ 120.00",
@@ -1412,7 +1412,7 @@
   {
     "id": 142,
     "name": "Box petit",
-    "image": "/products/147-box-petit.jpg",
+    "image": "/products/147-box-petit.webp",
     "description": "Box de 12 rosas personalizado con 5 chocolates Ferrero rocher",
     "price": "S/ 120.00",
     "originalPrice": "S/ 150.00",
@@ -1422,7 +1422,7 @@
   {
     "id": 143,
     "name": "Ramo buchon pink",
-    "image": "/products/148-ramo-buchon-pink.jpg",
+    "image": "/products/148-ramo-buchon-pink.webp",
     "description": "Ramo de 100 rosas rosadas y rojo",
     "price": "S/ 300.00",
     "originalPrice": "S/ 350.00",
